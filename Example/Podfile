@@ -1,0 +1,9 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+
+target 'FluidValidator_Tests', :exclusive => true do
+  pod 'FluidValidator', :path => '../'
+
+  
+end

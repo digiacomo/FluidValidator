@@ -1,0 +1,6 @@
+framework module FluidValidator {
+  umbrella header "FluidValidator-umbrella.h"
+
+  export *
+  module * { export * }
+}
