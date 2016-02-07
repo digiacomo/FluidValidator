@@ -20,6 +20,111 @@ it, simply add the following line to your Podfile:
 pod "FluidValidator"
 ```
 
+## Usage
+### A simple object
+Given this object:
+
+```swift
+
+import Foundation
+
+class Example {
+    var isTrue:Bool?
+    var number:Int?
+    var testProperty:String?
+    var altProperty:String?
+}
+```
+
+Create a custom validator extending AbstractValidator specifing target class Example:
+
+```swift
+
+import Foundation
+import FluidValidator
+
+class ExampleValidator : AbstractValidator<Example> {
+    override init() {
+        super.init()
+        
+        self.addValidation("testProperty") { (context) -> (AnyObject?) in
+            context.testProperty
+        }.addRule(BeNotNil())
+        
+        self.addValidation("altProperty") { (context) -> (AnyObject?) in
+            context.altProperty
+        }.addRule(BeNotEmpty())
+        
+        self.addValidation("isTrue") { (context) -> (AnyObject?) in
+            context.isTrue
+        }.addRule(BeTrue())
+        
+        self.addValidation("number") { (context) -> (AnyObject?) in
+            context.number
+        }.addRule(LessThan(limit: 3, false))
+    }
+}
+```
+### Nested Objects
+Given this more complex object:
+```swift
+import Foundation
+
+class ContainerObject {
+    var example:Example?
+    var test:String?
+}
+```
+The corresponding validator would be implemented this way:
+```swift
+import Foundation
+import FluidValidator
+
+class ContainerValidator : AbstractValidator<ContainerObject> {
+    override init() {
+        super.init()
+        self.addValidation("test") { (context) -> (AnyObject?) in
+            context.test
+        }.addRule(BeNotEmpty())
+        
+        self.addValidation("example") { (context) -> (AnyObject?) in
+            context.example
+        }.addRule(ExampleValidator())
+    }
+}
+```
+
+### Run validations and get result
+
+Now use it in your project this way
+
+```swift
+
+	let example = Example()
+	example.testProperty = nil
+	example.altProperty = ""
+	example.number = 3
+	example.isTrue = false
+
+	let validator = ExampleValidator()
+	let result = validator.validate(example)
+	let failMessage = validator.allErrors()
+```
+
+### Get fail messages
+```swift
+failMessage.failMessageForPath("test")?.errors.first.compact
+failMessage.failMessageForPath("test")?.errors.first.extended
+
+failMessage.failMessageForPath("example.number")?.errors.first.compact
+failMessage.failMessageForPath("example.number")?.errors.first.extended
+```
+The errors array contains ErrorMessag objects which in turn contains compact and extended error message.
+
+Take a look at Unit Test classes to figure out other features
+
+
+
 ## Author
 
 FrogRain, info@frograin.com
