@@ -8,12 +8,12 @@
 
 Pod::Spec.new do |s|
   s.name             = "FluidValidator"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "General purpose object validator"
 
   s.description      = <<-DESC
-  FluidValidator is intended to encapsulate validation logic of objects in your project. The API was designed with FluentValidation as reference (https://github.com/JeremySkinner/FluentValidation).
-  Currently offers validation of simple objects, complex objects (object graph), enumerables. Localized error messages. You can easly override base behaviors and/or built your own reusable validation rules.
+FluidValidator is intended to encapsulate validation logic. The API was designed with FluentValidation (https://github.com/JeremySkinner/FluentValidation) and Rails Validation as reference.
+Currently offers validation of simple objects, complex objects (object graph), enumerables. Localized error messages. You can easly override base behaviors and/or built your own reusable validation rules.
                        DESC
 
   s.homepage         = "https://github.com/frograin/FluidValidator"
