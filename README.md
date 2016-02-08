@@ -5,11 +5,16 @@
 [![License](https://img.shields.io/cocoapods/l/FluidValidator.svg?style=flat)](http://cocoapods.org/pods/FluidValidator)
 [![Platform](https://img.shields.io/cocoapods/p/FluidValidator.svg?style=flat)](http://cocoapods.org/pods/FluidValidator)
 
+## Description
+FluidValidator is intended to encapsulate validation logic. The API was designed with FluentValidation (https://github.com/JeremySkinner/FluentValidation) and Rails Validation as reference.
+  Currently offers validation of simple objects, complex objects (object graph), enumerables. Localized error messages. You can easly override base behaviors and/or built your own reusable validation rules.
+
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+No special requirements
 
 ## Installation
 
@@ -96,7 +101,7 @@ class ContainerValidator : AbstractValidator<ContainerObject> {
 
 ### Run validations and get result
 
-Now use it in your project this way
+regardless of your validators complexity, you can run validation process and extract error messages (if any) as showed here
 
 ```swift
 
@@ -120,7 +125,7 @@ failMessage.failMessageForPath("example")?.errors.first.extended
 failMessage.failMessageForPath("example.number")?.errors.first.compact
 failMessage.failMessageForPath("example.number")?.errors.first.extended
 ```
-The errors array contains ErrorMessag objects which in turn contains compact and extended error message.
+The errors array contains ErrorMessage objects which in turn contains compact and extended error message.
 
 Take a look at Unit Test classes to figure out other features
 
