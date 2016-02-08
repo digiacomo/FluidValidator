@@ -52,6 +52,7 @@ class FluidValidatorTests: XCTestCase {
         
         XCTAssertFalse(result)
         XCTAssertTrue(failMessage.failMessageForPath("test")?.errors.count > 0)
+        XCTAssertTrue(failMessage.failMessageForPath("example")?.errors.count > 0)
         XCTAssertTrue(failMessage.failMessageForPath("example.number")?.errors.count > 0)
     }
     
