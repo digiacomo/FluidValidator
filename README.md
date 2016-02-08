@@ -115,7 +115,8 @@ Now use it in your project this way
 ```swift
 failMessage.failMessageForPath("test")?.errors.first.compact
 failMessage.failMessageForPath("test")?.errors.first.extended
-
+failMessage.failMessageForPath("example")?.errors.first.compact
+failMessage.failMessageForPath("example")?.errors.first.extended
 failMessage.failMessageForPath("example.number")?.errors.first.compact
 failMessage.failMessageForPath("example.number")?.errors.first.extended
 ```
