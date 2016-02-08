@@ -78,8 +78,10 @@ public class AbstractValidator<T:AnyObject> : ValidationBase {
     }
     
     override public func hydrateFailMessage(message: FailMessage!, localizedSubject: String!, failValue: AnyObject?, context: AnyObject) {
-        message.summary.compact = self.errorMessage(localizedSubject, failValue: failValue, context: context)
-        message.summary.extended = self.errorMessageExtended(localizedSubject, failValue: failValue, context: context)
+        let error = ErrorMessage()
+        error.compact = self.errorMessage(localizedSubject, failValue: failValue, context: context)
+        error.extended = self.errorMessageExtended(localizedSubject, failValue: failValue, context: context)
+        message.errors.append(error)
         
         for validation in self.validations {
             message.setObject(validation.allErrors(), forKey: validation.validationName)
