@@ -8,15 +8,15 @@
 
 import Foundation
 
-class GenericRule: BeNotNil {
+public class GenericRule: BeNotNil {
     private var genericCondition:(AnyObject) -> (Bool)
     
-    init(condition:(AnyObject) -> (Bool)) {
+    public init(condition:(AnyObject) -> (Bool)) {
         self.genericCondition = condition
         super.init()
     }
     
-    override func performValidation(object: AnyObject?) -> Bool {
+    override public func performValidation(object: AnyObject?) -> Bool {
         if(!super.performValidation(object)) {
             return false
         }
