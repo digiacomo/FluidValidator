@@ -10,14 +10,14 @@ import Foundation
 
 public class FailMessage : NSObject {
     
-    public var summary:ErrorMessage
+    public var subject:String?
+    public var localizedSubject:String?
     
     public var errors:Array<ErrorMessage>
     
     private var opaqueDict:Dictionary<String, FailMessage>
     
     override init() {
-        self.summary = ErrorMessage()
         self.errors = Array<ErrorMessage>()
         self.opaqueDict = Dictionary<String, FailMessage>()
         super.init()
