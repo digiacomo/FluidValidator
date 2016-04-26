@@ -10,7 +10,7 @@ import Foundation
 
 public class FailMessage : NSObject {
     
-    public var subject:String?
+    public var summary:ErrorMessage
     public var localizedSubject:String?
     
     public var errors:Array<ErrorMessage>
@@ -18,6 +18,7 @@ public class FailMessage : NSObject {
     private var opaqueDict:Dictionary<String, FailMessage>
     
     override init() {
+        self.summary = ErrorMessage()
         self.errors = Array<ErrorMessage>()
         self.opaqueDict = Dictionary<String, FailMessage>()
         super.init()
@@ -35,7 +36,7 @@ public class FailMessage : NSObject {
     
     override public func valueForKeyPath(keyPath: String) -> AnyObject? {
         let dict = self.opaqueDict as NSDictionary
-        return dict.valueForKeyPath(keyPath) as! FailMessage
+        return dict.valueForKeyPath(keyPath) as? FailMessage
     }
     
     public func failMessageForPath(keyPath: String) -> FailMessage? {

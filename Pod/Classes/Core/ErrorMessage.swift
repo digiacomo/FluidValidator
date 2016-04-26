@@ -29,8 +29,8 @@ extension Array where Element:ErrorMessage {
 }
 
 public class ErrorMessage:Hashable {
-    var compact:String
-    var extended:String
+    public var compact:String
+    public var extended:String
     
     init() {
         self.compact = ""

@@ -10,8 +10,8 @@ import Foundation
 
 public class Validation<T:AnyObject> {
 
-    var validatables:Array<Validatable>
-    var error:FailMessage
+    var validatables:Array<Validatable> = Array<Validatable>()
+    var error:FailMessage = FailMessage()
     var validationName:String!
 
     var whenCondition:((context:T) -> (Bool))?
@@ -21,13 +21,12 @@ public class Validation<T:AnyObject> {
     public init(name:String!, targetGetter:(context:T)->(AnyObject?)){
         self.validationName = name
         self.validatables = Array<Validatable>()
-        self.targetGetter = targetGetter
         self.error = FailMessage()
+        self.targetGetter = targetGetter
     }
     
     public func runValidation(object:T) -> Bool {
-        self.error.localizedSubject = self.localizeValidationName(self.validationName, context:object)
-        self.error.subject = self.validationName
+        self.error = FailMessage()
         
         for validatable in self.validatables {
             let target = self.targetGetter(context: object)

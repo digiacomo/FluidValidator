@@ -1,0 +1,10 @@
+/* 
+  object_validator_custom.strings
+  FluidValidator
+
+  Created by Antonio Di Giacomo on 27/04/16.
+  Copyright © 2016 CocoaPods. All rights reserved.
+*/
+"UserRegistration.email.error.name" = "E-mail";
+"UserRegistration.firstname.error.name" = "Nome";
+"UserRegistration.lastname.error.name" = "Cognome";

@@ -4,6 +4,8 @@ use_frameworks!
 
 target 'FluidValidator_Tests', :exclusive => true do
   pod 'FluidValidator', :path => '../'
+end
 
-  
+target 'ExampleApp', :exclusive => true do
+    pod 'FluidValidator', :path => '../'
 end
