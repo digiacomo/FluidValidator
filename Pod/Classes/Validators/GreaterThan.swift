@@ -26,7 +26,9 @@ public class GreaterThan : BeNotNil {
         if(!super.performValidation(object)) {
             return false
         }else{
-            let value = object as! NSNumber
+            guard let value = object as? NSNumber else {
+                return false
+            }
             var result = value.compare(self.limit) == .OrderedDescending
             if(self.includeLimit){
                 result = result || (value == self.limit)

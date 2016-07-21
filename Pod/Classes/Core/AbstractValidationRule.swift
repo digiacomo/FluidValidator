@@ -14,7 +14,7 @@ public class AbstractValidationRule: ValidationBase {
         fatalError("Not implemented error")
     }
     
-    override public func hydrateFailMessage(message: FailMessage!, localizedSubject: String!, failValue: AnyObject?, context: AnyObject) {
+    override public func hydrateFailMessage(message: FailMessage, localizedSubject: String, failValue: AnyObject?, context: AnyObject) {
         let error = ErrorMessage()
         error.compact = self.errorMessage(localizedSubject, failValue: failValue, context: context)
         error.extended = self.errorMessageExtended(localizedSubject, failValue: failValue, context: context)

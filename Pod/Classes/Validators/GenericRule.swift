@@ -20,7 +20,9 @@ public class GenericRule: BeNotNil {
         if(!super.performValidation(object)) {
             return false
         }
-        
-        return self.genericCondition(object!)
+        guard let object = object else {
+            return false
+        }
+        return self.genericCondition(object)
     }
 }

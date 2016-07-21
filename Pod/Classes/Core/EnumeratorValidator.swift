@@ -17,11 +17,16 @@ public class EnumeratorValidator: AbstractValidator<NSMutableDictionary> {
     }
     
     public override func performValidation(object: AnyObject?) -> Bool {
-        return self.validate(object!)
+        guard let object = object else {
+            return false
+        }
+        return self.validate(object)
     }
     
-    override public func validate(object: AnyObject) -> Bool {
-        let arrObjects = object as! Array<AnyObject>
+    override public func validate(object: AnyObject?) -> Bool {
+        guard let arrObjects = object as? Array<AnyObject> else {
+            return false
+        }
         let dict = NSMutableDictionary()
         for (index, value) in arrObjects.enumerate() {
             dict.setObject(value, forKey: index.description)
@@ -32,14 +37,16 @@ public class EnumeratorValidator: AbstractValidator<NSMutableDictionary> {
         return super.validate(dict)
     }
     
-    override public func hydrateFailMessage(message: FailMessage!, localizedSubject: String!, failValue: AnyObject?, context: AnyObject) {
+    override public func hydrateFailMessage(message: FailMessage, localizedSubject: String, failValue: AnyObject?, context: AnyObject) {
         let error = ErrorMessage()
         error.compact = self.errorMessage(localizedSubject, failValue: failValue?.description, context: context)
         error.extended = self.errorMessageExtended(localizedSubject, failValue: failValue?.description, context: context)
         
         message.errors.append(error)
         
-        let arrObject = failValue as! Array<AnyObject>
+        guard let arrObject = failValue as? Array<AnyObject> else {
+            return
+        }
         for(index, _) in arrObject.enumerate() {
             let error = self.errorsForValidation(index.description)
             message.setObject(error, forKey: index.description)

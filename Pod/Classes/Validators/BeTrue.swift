@@ -14,6 +14,6 @@ public class BeTrue : BeNotNil {
         if(!super.performValidation(object)){
             return false
         }
-        return object as! Bool
+        return object as? Bool ?? false
     }
 }

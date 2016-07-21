@@ -13,6 +13,6 @@ public class BeNotEmpty : BeNotNil {
         if (!super.performValidation(object)) {
             return false
         }
-        return object!.description.characters.count > 0
+        return object?.description.characters.count > 0
     }
 }

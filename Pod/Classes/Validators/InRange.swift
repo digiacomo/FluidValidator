@@ -24,7 +24,9 @@ public class InRange : BeNotNil {
         if (!super.performValidation(object)) {
             return false
         }
-        let value = object as! NSNumber
+        guard let value = object as? NSNumber else {
+            return false
+        }
         
         var lowerLimit = value.compare(min) == .OrderedDescending
         if(self.comparisonMode.contains(ComparisonMode.MinIncluded)) {

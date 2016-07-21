@@ -12,13 +12,13 @@ public class Validation<T:AnyObject> {
 
     var validatables:Array<Validatable> = Array<Validatable>()
     var error:FailMessage = FailMessage()
-    var validationName:String!
+    var validationName:String
 
     var whenCondition:((context:T) -> (Bool))?
     var targetGetter:(context:T)->(AnyObject?)
     
     
-    public init(name:String!, targetGetter:(context:T)->(AnyObject?)){
+    public init(name:String, targetGetter:(context:T)->(AnyObject?)){
         self.validationName = name
         self.validatables = Array<Validatable>()
         self.error = FailMessage()
@@ -31,7 +31,7 @@ public class Validation<T:AnyObject> {
         for validatable in self.validatables {
             let target = self.targetGetter(context: object)
             
-            if(self.whenCondition != nil && !self.whenCondition!(context: object)){
+            if let whenCondition = self.whenCondition where !whenCondition(context: object) {
                 return true
             }
             
@@ -59,8 +59,8 @@ public class Validation<T:AnyObject> {
         return self.error
     }
 
-    public func localizeValidationName(name:String!, context:T) -> String! {
-        let className:String! = String(T.self)
+    public func localizeValidationName(name:String, context:T) -> String {
+        let className = String(T.self)
         let key = String(format: "%@.%@.error.name", className, name)
         return LocalizationHelper.localizeThis(key)
     }

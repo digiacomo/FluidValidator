@@ -75,4 +75,13 @@ class FluidValidatorTests: XCTestCase {
         XCTAssertTrue(failMessage.failMessageForPath("arrExample.0.number")!.errors.count > 0)
         XCTAssertTrue(failMessage.failMessageForPath("arrExample.1.number")!.errors.count > 0)
     }
+    
+    func testMultipleRulesOnSameProperty() {
+        let example = Example()
+        example.number = 5
+        let validator = ExampleValidator2()
+        let result = validator.validate(example)
+        let failMessage = validator.allErrors()
+        XCTAssertTrue(result)
+    }
 }

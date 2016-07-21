@@ -15,16 +15,19 @@ public class AbstractValidator<T:AnyObject> : ValidationBase {
         super.init()
     }
     
-    public func validate(object: AnyObject) -> Bool {
+    public func validate(object: AnyObject?) -> Bool {
         var result = true
         for validation in self.validations {
-            let validationResult = self.validate(validation.validationName, context: object as! T)
+            guard let object = object as? T else {
+                continue
+            }
+            let validationResult = self.validate(validation.validationName, context: object)
             result = result && validationResult
         }
         return result
     }
     
-    func validate(name:String!, context: T) -> Bool {
+    func validate(name:String, context: T) -> Bool {
         let validations = self.validations.filter({(validation) -> Bool in
             validation.validationName == name
         })
@@ -36,10 +39,21 @@ public class AbstractValidator<T:AnyObject> : ValidationBase {
         return validationResult
     }
     
-    public func addValidation(name:String!, targetGetter:(context:T)->(AnyObject?)) -> Validation<T> {
+    public func addValidation(name:String, targetGetter:(context:T)->(AnyObject?)) -> Validation<T> {
         let validation = Validation(name: name, targetGetter: targetGetter)
         self.validations.append(validation)
         return validation
+    }
+    
+    public func addValidation(property: Selector) -> Void {
+        let name = String(property)
+        addValidation(name) { (context) -> (AnyObject?) in
+            
+            guard let nsContext = context as? NSObject else {
+                return nil
+            }
+            return nsContext.performSelector(property) as? AnyObject
+        }
     }
     
     public func allErrors() -> FailMessage {
@@ -63,7 +77,7 @@ public class AbstractValidator<T:AnyObject> : ValidationBase {
             validation.validationName == name
         }
         
-        let failMessage = validations.first!.allErrors()
+        let failMessage = validations.first?.allErrors() ?? FailMessage()
         for validation in validations {
             let validationFail = validation.allErrors()
             let joinedArrays = failMessage.errors + validationFail.errors
@@ -74,10 +88,13 @@ public class AbstractValidator<T:AnyObject> : ValidationBase {
     
     // override ValidationBase (which implements Validatable)
     override public func performValidation(object:AnyObject?) -> Bool {
-        return self.validate(object as! T)
+        if let object = object as? T {
+            return self.validate(object)
+        }
+        return false
     }
     
-    override public func hydrateFailMessage(message: FailMessage!, localizedSubject: String!, failValue: AnyObject?, context: AnyObject) {
+    override public func hydrateFailMessage(message: FailMessage, localizedSubject: String, failValue: AnyObject?, context: AnyObject) {
         let error = ErrorMessage()
         error.compact = self.errorMessage(localizedSubject, failValue: failValue, context: context)
         error.extended = self.errorMessageExtended(localizedSubject, failValue: failValue, context: context)
@@ -90,7 +107,7 @@ public class AbstractValidator<T:AnyObject> : ValidationBase {
     
     override func errorTextLocalized() -> String {
         var message = super.errorTextLocalized()
-        let className:String! = String(self.dynamicType.self)
+        let className = String(self.dynamicType.self)
         var key = String(format: "%@.error.message", className)
         if(message == key) {
             key = "AbstractValidator.error.message"
@@ -101,7 +118,7 @@ public class AbstractValidator<T:AnyObject> : ValidationBase {
     
     override func errorTextExtendedLocalized() -> String {
         var message = super.errorTextExtendedLocalized()
-        let className:String! = String(self.dynamicType.self)
+        let className = String(self.dynamicType.self)
         var key = String(format: "%@.error.message.extended", className)
         if(message == key) {
             key = "AbstractValidator.error.message.extended"

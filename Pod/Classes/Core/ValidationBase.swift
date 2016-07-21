@@ -18,14 +18,14 @@ public class ValidationBase : Validatable {
         fatalError("Not implemented error")
     }
     
-    public func hydrateFailMessage(message: FailMessage!, localizedSubject: String!, failValue: AnyObject?, context: AnyObject) {
+    public func hydrateFailMessage(message: FailMessage, localizedSubject: String, failValue: AnyObject?, context: AnyObject) {
         fatalError("Not implemented error")
     }
     
-    func optionalValueDescription(value:AnyObject?) -> String! {
+    func optionalValueDescription(value:AnyObject?) -> String {
         var valueString = "";
-        if(value != nil) {
-            valueString = value!.description
+        if let value = value {
+            valueString = value.description
         }else{
             valueString = "nil"
         }
@@ -34,8 +34,8 @@ public class ValidationBase : Validatable {
     
     func errorMessage(subject:String, failValue: AnyObject?, context: AnyObject) -> String {
         var message = self.errorTextLocalized()
-        if(self.overrideErrorMessage != nil) {
-            message = self.overrideErrorMessage!
+        if let overrideMessage = self.overrideErrorMessage {
+            message = overrideMessage
         }
         return String(format: message, subject, self.optionalValueDescription(failValue))
     }
@@ -48,8 +48,8 @@ public class ValidationBase : Validatable {
     
     func errorMessageExtended(subject:String, failValue: AnyObject?, context: AnyObject) -> String {
         var message = self.errorTextExtendedLocalized()
-        if(self.overrideErrorMessage != nil) {
-            message = self.overrideErrorMessage!
+        if let overrideMessage = self.overrideErrorMessage {
+            message = overrideMessage
         }
         return String(format: message, subject, self.optionalValueDescription(failValue))
     }

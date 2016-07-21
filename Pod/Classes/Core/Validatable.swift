@@ -14,5 +14,5 @@ public protocol Validatable {
     
     func performValidation(object:AnyObject?) -> Bool
     
-    func hydrateFailMessage(message:FailMessage!, localizedSubject:String!, failValue:AnyObject?, context:AnyObject) -> ()
+    func hydrateFailMessage(message:FailMessage, localizedSubject:String, failValue:AnyObject?, context:AnyObject) -> ()
 }

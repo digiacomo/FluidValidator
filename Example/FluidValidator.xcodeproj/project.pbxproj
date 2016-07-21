@@ -24,6 +24,7 @@
 		1652CDF71CD017320003E602 /* UserRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1652CDF61CD017320003E602 /* UserRegistration.swift */; };
 		1652CDF91CD019D10003E602 /* RegistrationValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1652CDF81CD019D10003E602 /* RegistrationValidator.swift */; };
 		1652CDFC1CD026450003E602 /* object_validator_custom.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1652CDFE1CD026450003E602 /* object_validator_custom.strings */; };
+		16D6E9BF1D232D8A00B76F9A /* ExampleValidator2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16D6E9BE1D232D8A00B76F9A /* ExampleValidator2.swift */; };
 		360DEF0E616F768B13E8C9BF /* Pods_ExampleApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A3714945F30E4669ECC179C /* Pods_ExampleApp.framework */; };
 		D64AE8699B6FFF5D1F0189B5 /* Pods_FluidValidator_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1436C2E392484A3258ADF078 /* Pods_FluidValidator_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -50,6 +51,7 @@
 		1652CDF81CD019D10003E602 /* RegistrationValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationValidator.swift; sourceTree = "<group>"; };
 		1652CDFD1CD026450003E602 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/object_validator_custom.strings; sourceTree = "<group>"; };
 		1652CDFF1CD0266C0003E602 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/object_validator_custom.strings; sourceTree = "<group>"; };
+		16D6E9BE1D232D8A00B76F9A /* ExampleValidator2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleValidator2.swift; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* FluidValidator_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FluidValidator_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70983907B484BDCCF76E00D6 /* Pods-ExampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-ExampleApp/Pods-ExampleApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				163216CC1C66BDCD002444F1 /* ContainerValidator.swift */,
 				163216D01C675344002444F1 /* ListContainerValidator.swift */,
 				163216D21C67539A002444F1 /* ListContainer.swift */,
+				16D6E9BE1D232D8A00B76F9A /* ExampleValidator2.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -393,6 +396,7 @@
 				163216CD1C66BDCD002444F1 /* ContainerValidator.swift in Sources */,
 				163216D11C675344002444F1 /* ListContainerValidator.swift in Sources */,
 				163216D31C67539A002444F1 /* ListContainer.swift in Sources */,
+				16D6E9BF1D232D8A00B76F9A /* ExampleValidator2.swift in Sources */,
 				163216BF1C6649B6002444F1 /* ValidatorsTests.swift in Sources */,
 				161E7C231C6614DB00E43C0A /* Example.swift in Sources */,
 				163216C51C667ED5002444F1 /* ExampleValidator.swift in Sources */,
