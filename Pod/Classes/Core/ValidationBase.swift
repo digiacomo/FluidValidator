@@ -8,21 +8,21 @@
 
 import Foundation
 
-public class ValidationBase : Validatable {
-    public var overrideErrorMessage:String?
-    public var overrideErrorMessageExtended:String?
+open class ValidationBase : Validatable {
+    open var overrideErrorMessage:String?
+    open var overrideErrorMessageExtended:String?
     
     public init() {}
     
-    public func performValidation(object:AnyObject?) -> Bool {
+    open func performValidation(_ object:AnyObject?) -> Bool {
         fatalError("Not implemented error")
     }
     
-    public func hydrateFailMessage(message: FailMessage, localizedSubject: String, failValue: AnyObject?, context: AnyObject) {
+    open func hydrateFailMessage(_ message: FailMessage, localizedSubject: String, failValue: AnyObject?, context: AnyObject) {
         fatalError("Not implemented error")
     }
     
-    func optionalValueDescription(value:AnyObject?) -> String {
+    func optionalValueDescription(_ value:AnyObject?) -> String {
         var valueString = "";
         if let value = value {
             valueString = value.description
@@ -32,7 +32,7 @@ public class ValidationBase : Validatable {
         return valueString
     }
     
-    func errorMessage(subject:String, failValue: AnyObject?, context: AnyObject) -> String {
+    func errorMessage(_ subject:String, failValue: AnyObject?, context: AnyObject) -> String {
         var message = self.errorTextLocalized()
         if let overrideMessage = self.overrideErrorMessage {
             message = overrideMessage
@@ -41,12 +41,12 @@ public class ValidationBase : Validatable {
     }
     
     func errorTextLocalized() -> String {
-        let className = String(self.dynamicType.self)
+        let className = String(describing: type(of: self).self)
         let key = String(format: "%@.error.message", className)
         return LocalizationHelper.localizeThis(key)
     }
     
-    func errorMessageExtended(subject:String, failValue: AnyObject?, context: AnyObject) -> String {
+    func errorMessageExtended(_ subject:String, failValue: AnyObject?, context: AnyObject) -> String {
         var message = self.errorTextExtendedLocalized()
         if let overrideMessage = self.overrideErrorMessage {
             message = overrideMessage
@@ -55,7 +55,7 @@ public class ValidationBase : Validatable {
     }
     
     func errorTextExtendedLocalized() -> String {
-        let className = String(self.dynamicType.self)
+        let className = String(describing: type(of: self).self)
         let key = String(format: "%@.error.message.extended", className)
         return LocalizationHelper.localizeThis(key)
     }

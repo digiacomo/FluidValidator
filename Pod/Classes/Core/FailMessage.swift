@@ -8,14 +8,14 @@
 
 import Foundation
 
-public class FailMessage : NSObject {
+open class FailMessage : NSObject {
     
-    public var summary:ErrorMessage
-    public var localizedSubject:String?
+    open var summary:ErrorMessage
+    open var localizedSubject:String?
     
-    public var errors:Array<ErrorMessage>
+    open var errors:Array<ErrorMessage>
     
-    private var opaqueDict:Dictionary<String, FailMessage>
+    fileprivate var opaqueDict:Dictionary<String, FailMessage>
     
     override init() {
         self.summary = ErrorMessage()
@@ -24,22 +24,22 @@ public class FailMessage : NSObject {
         super.init()
     }
     
-    public func failingFields () -> [String] {
+    open func failingFields () -> [String] {
         return self.opaqueDict.keys.map { (key) -> String in
             key
         }
     }
     
-    func setObject(object:FailMessage, forKey:String) {
+    func setObject(_ object:FailMessage, forKey:String) {
         self.opaqueDict[forKey] = object;
     }
     
-    override public func valueForKeyPath(keyPath: String) -> AnyObject? {
+    override open func value(forKeyPath keyPath: String) -> Any? {
         let dict = self.opaqueDict as NSDictionary
-        return dict.valueForKeyPath(keyPath) as? FailMessage
+        return dict.value(forKeyPath: keyPath) as? FailMessage
     }
     
-    public func failMessageForPath(keyPath: String) -> FailMessage? {
-        return self.valueForKeyPath(keyPath) as? FailMessage
+    open func failMessageForPath(_ keyPath: String) -> FailMessage? {
+        return self.value(forKeyPath: keyPath) as? FailMessage
     }
 }

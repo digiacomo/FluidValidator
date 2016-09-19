@@ -8,9 +8,9 @@
 
 import Foundation
 
-public class BeTrue : BeNotNil {
+open class BeTrue : BeNotNil {
     
-    override public func performValidation(object: AnyObject?) -> Bool {
+    override open func performValidation(_ object: AnyObject?) -> Bool {
         if(!super.performValidation(object)){
             return false
         }

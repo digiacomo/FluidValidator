@@ -1,0 +1,6 @@
+framework module FluidValidator {
+  umbrella header "FluidValidator-iOS8.3-umbrella.h"
+
+  export *
+  module * { export * }
+}

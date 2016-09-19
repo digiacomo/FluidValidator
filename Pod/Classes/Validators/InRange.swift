@@ -8,10 +8,10 @@
 
 import Foundation
 
-public class InRange : BeNotNil {
-    private var min:NSNumber
-    private var max:NSNumber
-    private var comparisonMode:ComparisonMode = ComparisonMode.MinMaxExluded
+open class InRange : BeNotNil {
+    fileprivate var min:NSNumber
+    fileprivate var max:NSNumber
+    fileprivate var comparisonMode:ComparisonMode = ComparisonMode.MinMaxExluded
     
     public init(min:NSNumber, max:NSNumber, mode:ComparisonMode) {
         self.min = min
@@ -20,7 +20,7 @@ public class InRange : BeNotNil {
         super.init()
     }
     
-    override public func performValidation(object: AnyObject?) -> Bool {
+    override open func performValidation(_ object: AnyObject?) -> Bool {
         if (!super.performValidation(object)) {
             return false
         }
@@ -28,31 +28,31 @@ public class InRange : BeNotNil {
             return false
         }
         
-        var lowerLimit = value.compare(min) == .OrderedDescending
+        var lowerLimit = value.compare(min) == .orderedDescending
         if(self.comparisonMode.contains(ComparisonMode.MinIncluded)) {
-            lowerLimit = lowerLimit || value.compare(min) == .OrderedSame
+            lowerLimit = lowerLimit || value.compare(min) == .orderedSame
         }
         
-        var higherLimit = value.compare(max) == .OrderedAscending
+        var higherLimit = value.compare(max) == .orderedAscending
         if(self.comparisonMode.contains(ComparisonMode.MaxIncluded)) {
-            higherLimit = higherLimit || value.compare(max) == .OrderedSame
+            higherLimit = higherLimit || value.compare(max) == .orderedSame
         }
 
         return lowerLimit && higherLimit
     }
     
-    override func errorMessage(subject: String, failValue: AnyObject?, context: AnyObject) -> String {
+    override func errorMessage(_ subject: String, failValue: AnyObject?, context: AnyObject) -> String {
         let errMessage = self.errorTextLocalized()
         return String(format: errMessage, subject, self.min, self.max, self.optionalValueDescription(failValue))
     }
     
-    override func errorMessageExtended(subject: String, failValue: AnyObject?, context: AnyObject) -> String {
+    override func errorMessageExtended(_ subject: String, failValue: AnyObject?, context: AnyObject) -> String {
         let errMessage = self.errorTextExtendedLocalized()
         return String(format: errMessage, subject, self.min, self.max, self.optionalValueDescription(failValue))
     }
 }
 
-public struct ComparisonMode : OptionSetType{
+public struct ComparisonMode : OptionSet{
     public let rawValue : Int
     public init(rawValue:Int){ self.rawValue = rawValue}
     

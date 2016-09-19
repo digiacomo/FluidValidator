@@ -20,7 +20,7 @@ class ExampleValidator2: AbstractValidator<Example> {
         let rule3 = InRange(min: 0, max: 10, mode: ComparisonMode.MinMaxExluded)
         
         self.addValidation("number") { (context) -> (AnyObject?) in
-            context.number
+            context.number as AnyObject?
         }
             .addRule(rule1)
             .addRule(rule2)

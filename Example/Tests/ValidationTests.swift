@@ -23,7 +23,7 @@ class ValidationTests: XCTestCase {
     
     func testValidation() {
         let validation = Validation(name: "isTrue") { (context:Example) -> (AnyObject?) in
-            return context.isTrue
+            return context.isTrue as AnyObject?
         }
         let rule = BeNotNil()
         validation.addRule(rule)
@@ -40,7 +40,7 @@ class ValidationTests: XCTestCase {
     
     func testConditionalValidation() {
         let validation = Validation(name: "test") { (context:Example) -> (AnyObject?) in
-            return context.testProperty
+            return context.testProperty as AnyObject?
         }
         
         validation.when { (context) -> (Bool) in

@@ -8,13 +8,13 @@
 
 import Foundation
 
-public class AbstractValidationRule: ValidationBase {
+open class AbstractValidationRule: ValidationBase {
     
-    override public func performValidation(object: AnyObject?) -> Bool {
+    override open func performValidation(_ object: AnyObject?) -> Bool {
         fatalError("Not implemented error")
     }
     
-    override public func hydrateFailMessage(message: FailMessage, localizedSubject: String, failValue: AnyObject?, context: AnyObject) {
+    override open func hydrateFailMessage(_ message: FailMessage, localizedSubject: String, failValue: AnyObject?, context: AnyObject) {
         let error = ErrorMessage()
         error.compact = self.errorMessage(localizedSubject, failValue: failValue, context: context)
         error.extended = self.errorMessageExtended(localizedSubject, failValue: failValue, context: context)

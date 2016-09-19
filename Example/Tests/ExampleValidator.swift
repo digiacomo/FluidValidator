@@ -14,19 +14,19 @@ class ExampleValidator : AbstractValidator<Example> {
         super.init()
         
         self.addValidation("testProperty") { (context) -> (AnyObject?) in
-            context.testProperty
+            context.testProperty as AnyObject?
         }.addRule(BeNotNil())
         
         self.addValidation("altProperty") { (context) -> (AnyObject?) in
-            context.altProperty
+            context.altProperty as AnyObject?
         }.addRule(BeNotEmpty())
         
         self.addValidation("isTrue") { (context) -> (AnyObject?) in
-            context.isTrue
+            context.isTrue as AnyObject?
         }.addRule(BeTrue())
         
         self.addValidation("number") { (context) -> (AnyObject?) in
-            context.number
+            context.number as AnyObject?
         }.addRule(LessThan(limit: 3, false))
     }
 }

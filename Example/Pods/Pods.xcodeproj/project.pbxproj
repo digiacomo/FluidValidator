@@ -1,2040 +1,1012 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>0143087A997FAA631BE22CF6F143D2D0</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>3400A6E9E3D167C4D5A3ED4BE97FEFBF</string>
-			<key>buildPhases</key>
-			<array>
-				<string>D739099E0F1B55E8F366BC519DA0F32F</string>
-				<string>A584FE52E3393C38A52370FE366F0A53</string>
-				<string>082EB1F3F85FDF63E9F5F68084E2340D</string>
-				<string>43A4F4C32C27AB2D99725BCF12279792</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>FluidValidator</string>
-			<key>productName</key>
-			<string>FluidValidator</string>
-			<key>productReference</key>
-			<string>E4D62BCD97BF429FCCDF3F95B64B3515</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>0712466F8AC6EF53D26A6C80A6E23CE8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A63DD18293B9772E3E159BC1E24D00DF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0789C88EB25D51C921B73FD06C4E846E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>082EB1F3F85FDF63E9F5F68084E2340D</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>BE1FFD0D233D3DFB939E1F2A5FD32B0F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>0C5E1DF4680396EA02C46F7355BDF1A3</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>9CC288B431F07B2A65D79059DD2B8ED5</string>
-			<key>buildPhases</key>
-			<array>
-				<string>623FE417881827372EC3238DCEFEEA89</string>
-				<string>F6C2F0CA57564DAF95FC06FAB12C69CB</string>
-				<string>4522D33F360A559B92E29DEA7A6B7464</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>3AB07530E8907D19B569F12F8FEA4A77</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-FluidValidator_Tests</string>
-			<key>productName</key>
-			<string>Pods-FluidValidator_Tests</string>
-			<key>productReference</key>
-			<string>9BA32DC0AD169EC7DF66064C68E706D8</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>0F2D423145ED9367009C1ED83E30B5FA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>Validatable.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>10DE1947DAC0ED28F6C0A9F9BD75D546</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>RELEASE=1</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>SYMROOT</key>
-				<string>${SRCROOT}/../build</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>135CBA91C400D742EE10B4BB34A8CC21</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-ExampleApp-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>137033F5472EF5B9A479B8012FA3AEF2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-FluidValidator_Tests-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1403D3989892BE01C3C3349AC47A35DA</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>0712466F8AC6EF53D26A6C80A6E23CE8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>1926DC9E70CD9F18B599CD7B6BE23D01</key>
-		<dict>
-			<key>fileRef</key>
-			<string>386736525EC2DFA1BFA8FF608AAE049B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>1D31DB4153ADC382FBD2858F80C099DB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>Validation.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>246C6A8A808B885AFB1676CE8CC63803</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>956ED1E9E4794542E3F04BAFD5DC0463</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-FluidValidator_Tests/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-FluidValidator_Tests/Pods-FluidValidator_Tests.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_FluidValidator_Tests</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>2A71ACBA1F13A61405A0AEED0EA8EC72</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B3A93D9A4E0979E93A80C89CF32C65A1</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>2C13ECD0A0F578CF1DD825F0B93E9BF0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>BeNotEmpty.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2C94C6B2201CC4C7A622DB186D19AC13</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-FluidValidator_Tests-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2CC8E1966E03F56B30E42AD97E3F4C53</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>ValidationBase.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>552D02D5BA751AC2E8790D2811D496CA</string>
-				<string>10DE1947DAC0ED28F6C0A9F9BD75D546</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>30412E64772D54D44EA5562E967481F2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods-ExampleApp.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>321A5982EF9D38C973F51D9D337816E9</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>5AB0A93553D27EE231DF2199658B437D</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/FluidValidator/FluidValidator-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/FluidValidator/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/FluidValidator/FluidValidator.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>PRODUCT_NAME</key>
-				<string>FluidValidator</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>3234C60E4EA1E28BA40980736E7ACE58</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>InRange.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3400A6E9E3D167C4D5A3ED4BE97FEFBF</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>6DFDFBC57DE5226040077958CADCA5E4</string>
-				<string>321A5982EF9D38C973F51D9D337816E9</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>34811F58F8BB9432CA5F967CA1314049</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>ECA45C6F5BFCA10851ED8B6A269019B0</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-FluidValidator_Tests/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-FluidValidator_Tests/Pods-FluidValidator_Tests.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_FluidValidator_Tests</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>386736525EC2DFA1BFA8FF608AAE049B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>FluidValidator-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3AB07530E8907D19B569F12F8FEA4A77</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>FluidValidator</string>
-			<key>target</key>
-			<string>0143087A997FAA631BE22CF6F143D2D0</string>
-			<key>targetProxy</key>
-			<string>B8A9C87A9BFD18CDE3D120138DFC89B6</string>
-		</dict>
-		<key>3DEAAA73C255BAF77AEDB401A9EEDBFB</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>BeTrue.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>3E4E89230EF59BC255123B67864ACF77</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>3FA8EE0741467D987B4B4C5B955392B1</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E78AAE49AA24C15BD29BA1DB51AB68BA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>412659F72F29161DDA8850996424302D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2C13ECD0A0F578CF1DD825F0B93E9BF0</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>42C472D5E29314CB28E391812D6EE569</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>FluidValidator-prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4321C91C8DAE8BF9FD131A5327F9FF50</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>618A1083129D4CD4B77AEA41ADBD015F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>43A4F4C32C27AB2D99725BCF12279792</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>9F1E366B45760AE7A568A2B8A1A9DD77</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>43C9A37F61BA0FF468BC164189EEFB23</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A8C92B7A5DEAAE2AA97683A3C336E40D</string>
-				<string>5B10810FDD079CC4AED510512E8F3CDD</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Targets Support Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4503E684FED5DD38217E532BF42D0AC0</key>
-		<dict>
-			<key>fileRef</key>
-			<string>744C86B6A1EC46CA7AAFF45380B59AB3</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>4522D33F360A559B92E29DEA7A6B7464</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>4503E684FED5DD38217E532BF42D0AC0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>4EC8EA1CC8A517B6FC0358BF00B7A29E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-ExampleApp.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>552D02D5BA751AC2E8790D2811D496CA</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>STRIP_INSTALLED_PRODUCT</key>
-				<string>NO</string>
-				<key>SYMROOT</key>
-				<string>${SRCROOT}/../build</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>599D05528BDFA299B983678FAC9E925A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>9CC01C9D0A6B4CD1E6066BD7A8AF0BD9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Resources</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>59E839699A54CDEE1AF45509F3CB67F3</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>C6014672CCBD17DE4EB462ECDB9B2191</string>
-			<key>buildPhases</key>
-			<array>
-				<string>1403D3989892BE01C3C3349AC47A35DA</string>
-				<string>4321C91C8DAE8BF9FD131A5327F9FF50</string>
-				<string>84E7B234FB96BC9A36AD474828DC4D4D</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>D1D54B7C5FA5E7A453F4883F09BBD046</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Pods-ExampleApp</string>
-			<key>productName</key>
-			<string>Pods-ExampleApp</string>
-			<key>productReference</key>
-			<string>93B6640421882505ED22616CA1E61D86</string>
-			<key>productType</key>
-			<string>com.apple.product-type.framework</string>
-		</dict>
-		<key>5AB0A93553D27EE231DF2199658B437D</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>FluidValidator.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5B10810FDD079CC4AED510512E8F3CDD</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>81A9398AF948597DD2AA56FF9F97F28E</string>
-				<string>E1162724874B7BF72307477AC9CFF33A</string>
-				<string>137033F5472EF5B9A479B8012FA3AEF2</string>
-				<string>FD8CE3C95D78CA0F6717D9AF344C3E21</string>
-				<string>85E6DAC935CD1D119CF1F5393BEBF8D4</string>
-				<string>B236DEBF52C9B894268CADBE44BBD8C5</string>
-				<string>2C94C6B2201CC4C7A622DB186D19AC13</string>
-				<string>744C86B6A1EC46CA7AAFF45380B59AB3</string>
-				<string>956ED1E9E4794542E3F04BAFD5DC0463</string>
-				<string>ECA45C6F5BFCA10851ED8B6A269019B0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-FluidValidator_Tests</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-FluidValidator_Tests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5BF35D4A528306D05E2D22FA120A4D92</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>path</key>
-			<string>Pods-ExampleApp-acknowledgements.markdown</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>5DAA237FCFACCF9B57BB6F99608C2585</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-ExampleApp-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>618A1083129D4CD4B77AEA41ADBD015F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3E4E89230EF59BC255123B67864ACF77</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>623FE417881827372EC3238DCEFEEA89</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>8FB37AF1CA0E6815C2C983B764488513</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>630C9E4169EC4A9A44F9AA9E2EB4B308</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-ExampleApp.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6B59D454223B5749D59CFC3A585DA247</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>GenericRule.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6C11FA0ACCA1B28C115EF22F22C75D00</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>C1B91481F0443340A830D3DF61C2273F</string>
-				<string>AE2C4B6CF0418FDD25BA5E6FBF6A685E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Classes</string>
-			<key>path</key>
-			<string>Classes</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>6D0326D1CFF84B8304DF8D8A795FDC09</key>
-		<dict>
-			<key>fileRef</key>
-			<string>5DAA237FCFACCF9B57BB6F99608C2585</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>6DFDFBC57DE5226040077958CADCA5E4</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>5AB0A93553D27EE231DF2199658B437D</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>Target Support Files/FluidValidator/FluidValidator-prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/FluidValidator/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/FluidValidator/FluidValidator.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>PRODUCT_NAME</key>
-				<string>FluidValidator</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>744C86B6A1EC46CA7AAFF45380B59AB3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Pods-FluidValidator_Tests-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>76139E42119EF56A6B8EB17FD14DA9D1</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>EE1D0C04D4AE0E3DFC6A7DC8D60F5194</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Development Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>780472CE39E9061B2B1E58190B00BF5F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>AbstractValidator.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7A169CA66B0DBAAB45B854AB8B6AB6AA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CA7AE0B4E230E322B44DCFC568862ABE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>7CB5B6DA30CB92D87A2877F637DC9DC2</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-ExampleApp-resources.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7DB346D0F39D3F0E887471402A8071AB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
-				<string>76139E42119EF56A6B8EB17FD14DA9D1</string>
-				<string>BC3CA7F9E30CC8F7E2DD044DD34432FC</string>
-				<string>C5F2506B6EAFD2EACD775AAAA341B5EF</string>
-				<string>43C9A37F61BA0FF468BC164189EEFB23</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7EF10F97E2804697A8677302455F7CCC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>8D36F5F8C625AB57A2A6B2177C8F25D9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>81A9398AF948597DD2AA56FF9F97F28E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>84E7B234FB96BC9A36AD474828DC4D4D</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>6D0326D1CFF84B8304DF8D8A795FDC09</string>
-			</array>
-			<key>isa</key>
-			<string>PBXHeadersBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>85E6DAC935CD1D119CF1F5393BEBF8D4</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-FluidValidator_Tests-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8D354E7ED67DCA6EDD468B840A85D318</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E719DDED4055A92E25B49FE36D6081E6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>8D36F5F8C625AB57A2A6B2177C8F25D9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>GreaterThan.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>8FB37AF1CA0E6815C2C983B764488513</key>
-		<dict>
-			<key>fileRef</key>
-			<string>85E6DAC935CD1D119CF1F5393BEBF8D4</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>903A8E9E9CE57B788A1CD9C28F544CDF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>6C11FA0ACCA1B28C115EF22F22C75D00</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pod</string>
-			<key>path</key>
-			<string>Pod</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>93B6640421882505ED22616CA1E61D86</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Pods_ExampleApp.framework</string>
-			<key>path</key>
-			<string>Pods_ExampleApp.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>956ED1E9E4794542E3F04BAFD5DC0463</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-FluidValidator_Tests.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>95BB0B30593511DD7080F0E791298DEC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3DEAAA73C255BAF77AEDB401A9EEDBFB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>97F5A489F0208A9D7274B61CED3C0F31</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>BeNotNil.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9BA32DC0AD169EC7DF66064C68E706D8</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>Pods_FluidValidator_Tests.framework</string>
-			<key>path</key>
-			<string>Pods_FluidValidator_Tests.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>9CA9008D8D7B45683F67C8E959E69C00</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.plug-in</string>
-			<key>path</key>
-			<string>FluidValidator.bundle</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9CC01C9D0A6B4CD1E6066BD7A8AF0BD9</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>9CA9008D8D7B45683F67C8E959E69C00</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pod</string>
-			<key>path</key>
-			<string>Pod</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9CC288B431F07B2A65D79059DD2B8ED5</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>246C6A8A808B885AFB1676CE8CC63803</string>
-				<string>34811F58F8BB9432CA5F967CA1314049</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>9F1E366B45760AE7A568A2B8A1A9DD77</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CEC39807CDF5EB263A9F91BDBE5190EE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-			<key>settings</key>
-			<dict>
-				<key>ATTRIBUTES</key>
-				<array>
-					<string>Public</string>
-				</array>
-			</dict>
-		</dict>
-		<key>A36CADEF208DBA8192841D4C06EB98DD</key>
-		<dict>
-			<key>fileRef</key>
-			<string>C3BACD5A6616F37F37B776A1C655968C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A584FE52E3393C38A52370FE366F0A53</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>ADB3937EE60FA4948E437D300ED8CA60</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>A63DD18293B9772E3E159BC1E24D00DF</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>Pods-ExampleApp-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A8C92B7A5DEAAE2AA97683A3C336E40D</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E3FAC5C37E0A64CDB9FB8CB7B02E827B</string>
-				<string>30412E64772D54D44EA5562E967481F2</string>
-				<string>5BF35D4A528306D05E2D22FA120A4D92</string>
-				<string>135CBA91C400D742EE10B4BB34A8CC21</string>
-				<string>A63DD18293B9772E3E159BC1E24D00DF</string>
-				<string>DC467F3FAB1459EAEA458DF106818E04</string>
-				<string>7CB5B6DA30CB92D87A2877F637DC9DC2</string>
-				<string>5DAA237FCFACCF9B57BB6F99608C2585</string>
-				<string>630C9E4169EC4A9A44F9AA9E2EB4B308</string>
-				<string>4EC8EA1CC8A517B6FC0358BF00B7A29E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods-ExampleApp</string>
-			<key>path</key>
-			<string>Target Support Files/Pods-ExampleApp</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>A96DDF8FE911523420FDFD32B80B0EC6</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>630C9E4169EC4A9A44F9AA9E2EB4B308</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-ExampleApp/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-ExampleApp/Pods-ExampleApp.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_ExampleApp</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>ADB3937EE60FA4948E437D300ED8CA60</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3E4E89230EF59BC255123B67864ACF77</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>ADCC4268F01781CC122B2AAF979CC4E3</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>0143087A997FAA631BE22CF6F143D2D0</string>
-			<key>remoteInfo</key>
-			<string>FluidValidator</string>
-		</dict>
-		<key>AE2C4B6CF0418FDD25BA5E6FBF6A685E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>2C13ECD0A0F578CF1DD825F0B93E9BF0</string>
-				<string>97F5A489F0208A9D7274B61CED3C0F31</string>
-				<string>3DEAAA73C255BAF77AEDB401A9EEDBFB</string>
-				<string>6B59D454223B5749D59CFC3A585DA247</string>
-				<string>8D36F5F8C625AB57A2A6B2177C8F25D9</string>
-				<string>3234C60E4EA1E28BA40980736E7ACE58</string>
-				<string>E78AAE49AA24C15BD29BA1DB51AB68BA</string>
-				<string>C3BACD5A6616F37F37B776A1C655968C</string>
-				<string>E5F80B96CC6F10ACF7BE95B19D710DA9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Validators</string>
-			<key>path</key>
-			<string>Validators</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B236DEBF52C9B894268CADBE44BBD8C5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-FluidValidator_Tests-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B3A93D9A4E0979E93A80C89CF32C65A1</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>EnumeratorValidator.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B8A9C87A9BFD18CDE3D120138DFC89B6</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>D41D8CD98F00B204E9800998ECF8427E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>0143087A997FAA631BE22CF6F143D2D0</string>
-			<key>remoteInfo</key>
-			<string>FluidValidator</string>
-		</dict>
-		<key>BA6428E9F66FD5A23C0A2E06ED26CD2F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text</string>
-			<key>name</key>
-			<string>Podfile</string>
-			<key>path</key>
-			<string>../Podfile</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-			<key>xcLanguageSpecificationIdentifier</key>
-			<string>xcode.lang.ruby</string>
-		</dict>
-		<key>BC3CA7F9E30CC8F7E2DD044DD34432FC</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>BF6342C8B29F4CEEA088EFF7AB4DE362</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BE1FFD0D233D3DFB939E1F2A5FD32B0F</key>
-		<dict>
-			<key>fileRef</key>
-			<string>9CA9008D8D7B45683F67C8E959E69C00</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BEC06020621ACC55F5BB46C4C1EEBF7F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>FailMessage.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BF6342C8B29F4CEEA088EFF7AB4DE362</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>3E4E89230EF59BC255123B67864ACF77</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>iOS</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C1B91481F0443340A830D3DF61C2273F</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CA7AE0B4E230E322B44DCFC568862ABE</string>
-				<string>780472CE39E9061B2B1E58190B00BF5F</string>
-				<string>B3A93D9A4E0979E93A80C89CF32C65A1</string>
-				<string>DE9E45ADB4DC33213984F9EB7C3F1A15</string>
-				<string>BEC06020621ACC55F5BB46C4C1EEBF7F</string>
-				<string>E719DDED4055A92E25B49FE36D6081E6</string>
-				<string>0F2D423145ED9367009C1ED83E30B5FA</string>
-				<string>1D31DB4153ADC382FBD2858F80C099DB</string>
-				<string>2CC8E1966E03F56B30E42AD97E3F4C53</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Core</string>
-			<key>path</key>
-			<string>Core</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C3BACD5A6616F37F37B776A1C655968C</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>RegexMatch.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C5345957715BFAB0F98AE1ED313A66F3</key>
-		<dict>
-			<key>fileRef</key>
-			<string>E5F80B96CC6F10ACF7BE95B19D710DA9</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C565E510A12F654741676D93449484A6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>2CC8E1966E03F56B30E42AD97E3F4C53</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>C5F2506B6EAFD2EACD775AAAA341B5EF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E4D62BCD97BF429FCCDF3F95B64B3515</string>
-				<string>93B6640421882505ED22616CA1E61D86</string>
-				<string>9BA32DC0AD169EC7DF66064C68E706D8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C6014672CCBD17DE4EB462ECDB9B2191</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>A96DDF8FE911523420FDFD32B80B0EC6</string>
-				<string>F00382C0F8904DF4F29A53832F67CE2C</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>CA7AE0B4E230E322B44DCFC568862ABE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>AbstractValidationRule.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CDB0EF9D115FA606E2661224540BD079</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>FluidValidator.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CEC39807CDF5EB263A9F91BDBE5190EE</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>FluidValidator-umbrella.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CF46AABA126939BC3A53080DA265E630</key>
-		<dict>
-			<key>fileRef</key>
-			<string>BEC06020621ACC55F5BB46C4C1EEBF7F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D1D54B7C5FA5E7A453F4883F09BBD046</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>name</key>
-			<string>FluidValidator</string>
-			<key>target</key>
-			<string>0143087A997FAA631BE22CF6F143D2D0</string>
-			<key>targetProxy</key>
-			<string>ADCC4268F01781CC122B2AAF979CC4E3</string>
-		</dict>
-		<key>D3DAE619B11A0A6C93E8C7329475EBB7</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3234C60E4EA1E28BA40980736E7ACE58</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D41D8CD98F00B204E9800998ECF8427E</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0700</string>
-				<key>LastUpgradeCheck</key>
-				<string>0700</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>2D8E8EC45A3A1A1D94AE762CB5028504</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>7DB346D0F39D3F0E887471402A8071AB</string>
-			<key>productRefGroup</key>
-			<string>C5F2506B6EAFD2EACD775AAAA341B5EF</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>0143087A997FAA631BE22CF6F143D2D0</string>
-				<string>59E839699A54CDEE1AF45509F3CB67F3</string>
-				<string>0C5E1DF4680396EA02C46F7355BDF1A3</string>
-			</array>
-		</dict>
-		<key>D51CA7E051482DF7FEEDE4DA9C593927</key>
-		<dict>
-			<key>fileRef</key>
-			<string>DE9E45ADB4DC33213984F9EB7C3F1A15</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D739099E0F1B55E8F366BC519DA0F32F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>7A169CA66B0DBAAB45B854AB8B6AB6AA</string>
-				<string>F458284332528E64E43164A2E9409FB5</string>
-				<string>412659F72F29161DDA8850996424302D</string>
-				<string>EBF402EFA03230386C55FFEF907B3DC9</string>
-				<string>95BB0B30593511DD7080F0E791298DEC</string>
-				<string>2A71ACBA1F13A61405A0AEED0EA8EC72</string>
-				<string>D51CA7E051482DF7FEEDE4DA9C593927</string>
-				<string>CF46AABA126939BC3A53080DA265E630</string>
-				<string>1926DC9E70CD9F18B599CD7B6BE23D01</string>
-				<string>FF12745FB00F60601CAA723DEC50D8CE</string>
-				<string>7EF10F97E2804697A8677302455F7CCC</string>
-				<string>D3DAE619B11A0A6C93E8C7329475EBB7</string>
-				<string>3FA8EE0741467D987B4B4C5B955392B1</string>
-				<string>8D354E7ED67DCA6EDD468B840A85D318</string>
-				<string>A36CADEF208DBA8192841D4C06EB98DD</string>
-				<string>F256E1264F432919DDF608E9EA5C6475</string>
-				<string>DA8623BFAD97B337C7E0528F17D96417</string>
-				<string>C565E510A12F654741676D93449484A6</string>
-				<string>C5345957715BFAB0F98AE1ED313A66F3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>DA8623BFAD97B337C7E0528F17D96417</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1D31DB4153ADC382FBD2858F80C099DB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>DC467F3FAB1459EAEA458DF106818E04</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.script.sh</string>
-			<key>path</key>
-			<string>Pods-ExampleApp-frameworks.sh</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DE9E45ADB4DC33213984F9EB7C3F1A15</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>ErrorMessage.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E0A07C1510FD986F7958E3A1ED5DE8C9</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CDB0EF9D115FA606E2661224540BD079</string>
-				<string>5AB0A93553D27EE231DF2199658B437D</string>
-				<string>386736525EC2DFA1BFA8FF608AAE049B</string>
-				<string>42C472D5E29314CB28E391812D6EE569</string>
-				<string>CEC39807CDF5EB263A9F91BDBE5190EE</string>
-				<string>0789C88EB25D51C921B73FD06C4E846E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Support Files</string>
-			<key>path</key>
-			<string>Example/Pods/Target Support Files/FluidValidator</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1162724874B7BF72307477AC9CFF33A</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods-FluidValidator_Tests.modulemap</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E3A1646F68EA837031EFF878FE2EF55A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>3E4E89230EF59BC255123B67864ACF77</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>E3FAC5C37E0A64CDB9FB8CB7B02E827B</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E4D62BCD97BF429FCCDF3F95B64B3515</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>FluidValidator.framework</string>
-			<key>path</key>
-			<string>FluidValidator.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>E5F80B96CC6F10ACF7BE95B19D710DA9</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>ValidEmail.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E719DDED4055A92E25B49FE36D6081E6</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>LocalizationHelper.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E78AAE49AA24C15BD29BA1DB51AB68BA</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>LessThan.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EBF402EFA03230386C55FFEF907B3DC9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>97F5A489F0208A9D7274B61CED3C0F31</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>ECA45C6F5BFCA10851ED8B6A269019B0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>path</key>
-			<string>Pods-FluidValidator_Tests.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>EE1D0C04D4AE0E3DFC6A7DC8D60F5194</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>903A8E9E9CE57B788A1CD9C28F544CDF</string>
-				<string>599D05528BDFA299B983678FAC9E925A</string>
-				<string>E0A07C1510FD986F7958E3A1ED5DE8C9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>FluidValidator</string>
-			<key>path</key>
-			<string>../..</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>F00382C0F8904DF4F29A53832F67CE2C</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>4EC8EA1CC8A517B6FC0358BF00B7A29E</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>CURRENT_PROJECT_VERSION</key>
-				<string>1</string>
-				<key>DEFINES_MODULE</key>
-				<string>YES</string>
-				<key>DYLIB_COMPATIBILITY_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_CURRENT_VERSION</key>
-				<string>1</string>
-				<key>DYLIB_INSTALL_NAME_BASE</key>
-				<string>@rpath</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Target Support Files/Pods-ExampleApp/Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.3</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>@executable_path/Frameworks</string>
-					<string>@loader_path/Frameworks</string>
-				</array>
-				<key>MACH_O_TYPE</key>
-				<string>staticlib</string>
-				<key>MODULEMAP_FILE</key>
-				<string>Target Support Files/Pods-ExampleApp/Pods-ExampleApp.modulemap</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>OTHER_LDFLAGS</key>
-				<string></string>
-				<key>OTHER_LIBTOOLFLAGS</key>
-				<string></string>
-				<key>PODS_ROOT</key>
-				<string>$(SRCROOT)</string>
-				<key>PRODUCT_NAME</key>
-				<string>Pods_ExampleApp</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VERSIONING_SYSTEM</key>
-				<string>apple-generic</string>
-				<key>VERSION_INFO_PREFIX</key>
-				<string></string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>F256E1264F432919DDF608E9EA5C6475</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0F2D423145ED9367009C1ED83E30B5FA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F458284332528E64E43164A2E9409FB5</key>
-		<dict>
-			<key>fileRef</key>
-			<string>780472CE39E9061B2B1E58190B00BF5F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F6C2F0CA57564DAF95FC06FAB12C69CB</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>E3A1646F68EA837031EFF878FE2EF55A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>FD8CE3C95D78CA0F6717D9AF344C3E21</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Pods-FluidValidator_Tests-acknowledgements.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>FF12745FB00F60601CAA723DEC50D8CE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>6B59D454223B5749D59CFC3A585DA247</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>D41D8CD98F00B204E9800998ECF8427E</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02706E03CA08C385AA90ADAC32EA84CE /* FluidValidator-iOS8.3-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBB02A20B7A17B1A305345DF72B8715 /* FluidValidator-iOS8.3-dummy.m */; };
+		065473FEF8690433521069EF48005363 /* AbstractValidationRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCA6A6663BF50284F1142BBBD480678 /* AbstractValidationRule.swift */; };
+		11C245EA563936DFF6F049C932FC19D4 /* GenericRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9458DAD401E6402A98B8A713118F7FE9 /* GenericRule.swift */; };
+		132582207B4FAE741A48635340381826 /* BeNotNil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD3286D51A9A1F86A54568630C6782A /* BeNotNil.swift */; };
+		1A23269628937A469B00585FEE92A7A6 /* FluidValidator-iOS9.3-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8307F8F744F1B2508A8C3FD36C17BB69 /* FluidValidator-iOS9.3-dummy.m */; };
+		1AA28888708B9BDD0EFF2CCA82B95E43 /* FluidValidator.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8EC116DEA0A685DCAA932CD1054244E2 /* FluidValidator.bundle */; };
+		226E4769939C8995CB12D934E1BEC6BB /* ValidationBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6AEA67DEDC4DCF9EC9A5D108480217 /* ValidationBase.swift */; };
+		28CEBDA46AEF3E781EB399D9B756D7A2 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA20CD6F606FD3938B01614E6CF0883 /* Validation.swift */; };
+		2C6505A017E0EDDD48E836838D5D5BC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		3074487D370F254D18CB4659346AC1E0 /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18857F4BA0A404852B46D7269CB9492A /* Validatable.swift */; };
+		3A33104FC8552B64A23D24F844BEED54 /* Pods-ExampleApp-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DAA237FCFACCF9B57BB6F99608C2585 /* Pods-ExampleApp-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A7F328F9CE8341A453691CB20769839 /* GenericRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9458DAD401E6402A98B8A713118F7FE9 /* GenericRule.swift */; };
+		3FE2B0A9DE55AE22F4B255ED36A74E0F /* Pods-ExampleApp-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A63DD18293B9772E3E159BC1E24D00DF /* Pods-ExampleApp-dummy.m */; };
+		47AFA8C4A32EB342BDA191AFC4D30E11 /* BeNotNil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD3286D51A9A1F86A54568630C6782A /* BeNotNil.swift */; };
+		482FC93BE66E2507B967CED8DDCCDDC8 /* ValidEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D5C08A04B8D563510F330C6071D6F6 /* ValidEmail.swift */; };
+		496A6F7D4B0FFF6467297BE9C87204F2 /* BeTrue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111B8CE3F5E9EAC69C7D0F1E47368D05 /* BeTrue.swift */; };
+		4A134B0D633A71C4413300D26890BA38 /* EnumeratorValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96BFD403D87069AE1A8401A66FBCF85 /* EnumeratorValidator.swift */; };
+		597834A5562D9458D048E400FF5FB5EC /* AbstractValidationRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DCA6A6663BF50284F1142BBBD480678 /* AbstractValidationRule.swift */; };
+		5C035A34D9482ECC345CA40084C98ED9 /* Pods-FluidValidator_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 744C86B6A1EC46CA7AAFF45380B59AB3 /* Pods-FluidValidator_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65F956B242515ABE4727E783970B9B8D /* BeTrue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111B8CE3F5E9EAC69C7D0F1E47368D05 /* BeTrue.swift */; };
+		6A5973BC9754806897D7A651641FAEFF /* FailMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE11CC69B621FE807692A13E450B576E /* FailMessage.swift */; };
+		6D73CE69FBAE2D7D1B34BC5BDFF89492 /* FluidValidator.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8EC116DEA0A685DCAA932CD1054244E2 /* FluidValidator.bundle */; };
+		74495A00330470624D0FA0E283975FA4 /* ValidEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D5C08A04B8D563510F330C6071D6F6 /* ValidEmail.swift */; };
+		7C3D0B3216EEA08B311D54669CD3AEFA /* BeNotEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A05C7537AAC082CE2494B09E2B704B5 /* BeNotEmpty.swift */; };
+		7DDC0F1C772AB60CDC5B5D5B2F8168BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		7F67EAD143E2D47861900C69EF9924EA /* EnumeratorValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96BFD403D87069AE1A8401A66FBCF85 /* EnumeratorValidator.swift */; };
+		8900FDA8D607470B0027F8C3BE800A27 /* LessThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC80B4C5693AB33BC072868D3ABEE42 /* LessThan.swift */; };
+		8BF9B550C9E94E93252F2AAF9D726B76 /* ValidationBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6AEA67DEDC4DCF9EC9A5D108480217 /* ValidationBase.swift */; };
+		926655F265BB58510EF2AFAAF4188E66 /* InRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2849AC9699274EBC2A0B22AEB179E5 /* InRange.swift */; };
+		A6EC764B6A5064EBA1CC32E4E356B1A5 /* GreaterThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057A32990B8D6FDB94E242842BC050B5 /* GreaterThan.swift */; };
+		B04139EE7449260E4E3CE8D899CE9007 /* RegexMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E4FA2C5B702C35E1817F4FD9AE93DF /* RegexMatch.swift */; };
+		B50136C7421A58FAD28EF72E482693A1 /* LocalizationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88B07393B56EBF0FCBC9C56E6CA1143 /* LocalizationHelper.swift */; };
+		BE5883091BA11A7AEACBCF1673238410 /* FluidValidator-iOS9.3-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 445CCE31C3FE708ADD1896EBADD63B54 /* FluidValidator-iOS9.3-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C0C85E79DA9AA9E0AEE293EFEA4984E1 /* AbstractValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4BE70EDC7F73998CD8CF620D2378B7 /* AbstractValidator.swift */; };
+		C87C4D2CF888380F279ED9622421CD8F /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC6533058351EAE9EFE967C02DB3CF9 /* ErrorMessage.swift */; };
+		CE410A7A18607EDF6B3014BC2206D6C5 /* LocalizationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D88B07393B56EBF0FCBC9C56E6CA1143 /* LocalizationHelper.swift */; };
+		CE9687EAD44EC7254E38B4735F32C3F5 /* Pods-FluidValidator_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 85E6DAC935CD1D119CF1F5393BEBF8D4 /* Pods-FluidValidator_Tests-dummy.m */; };
+		CF5FD4218E5D2FBFA1A0C39446EC5F0C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		D1301B60503FFB726135602720392FB5 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA20CD6F606FD3938B01614E6CF0883 /* Validation.swift */; };
+		D3D5B4D583B9EA5FEFA538F2C26F3323 /* GreaterThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057A32990B8D6FDB94E242842BC050B5 /* GreaterThan.swift */; };
+		D7C5E18496712B12B6874257DF814DE5 /* InRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B2849AC9699274EBC2A0B22AEB179E5 /* InRange.swift */; };
+		D92D67A4051F1F6BE8875C849AA1BEB3 /* FailMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE11CC69B621FE807692A13E450B576E /* FailMessage.swift */; };
+		DA7BA8BFD421F92F9DDE8AA5D968A065 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		F060D3B61C99D8FDF1F12416BE682122 /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18857F4BA0A404852B46D7269CB9492A /* Validatable.swift */; };
+		F254EAC2D4726045949902A7E7C75F94 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC6533058351EAE9EFE967C02DB3CF9 /* ErrorMessage.swift */; };
+		F6BE1195A017038FA39EB20007E11B37 /* BeNotEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A05C7537AAC082CE2494B09E2B704B5 /* BeNotEmpty.swift */; };
+		F84471155E5E2795354015BAA5EB7AEF /* FluidValidator-iOS8.3-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 84D88F863AC8F8E8FE2C693F9736FB8E /* FluidValidator-iOS8.3-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F8F4B213BF1EAB5B8DA9254488B19021 /* RegexMatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E4FA2C5B702C35E1817F4FD9AE93DF /* RegexMatch.swift */; };
+		FAF161449F5ABD87E793A66EC652A3E5 /* LessThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DC80B4C5693AB33BC072868D3ABEE42 /* LessThan.swift */; };
+		FEBAABD5DC9EF08F70D0EEF59FA8F60D /* AbstractValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4BE70EDC7F73998CD8CF620D2378B7 /* AbstractValidator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		30C4BD60149E198FD856D8A7658516BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1085580CE50E3560562608F6A1F4725;
+			remoteInfo = "FluidValidator-iOS9.3";
+		};
+		E1BEFE7771744262893830976AD6262C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF60CCB95EA3661135D249BDBCBF6D87;
+			remoteInfo = "FluidValidator-iOS8.3";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00D5C08A04B8D563510F330C6071D6F6 /* ValidEmail.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ValidEmail.swift; sourceTree = "<group>"; };
+		057A32990B8D6FDB94E242842BC050B5 /* GreaterThan.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GreaterThan.swift; sourceTree = "<group>"; };
+		0CA20CD6F606FD3938B01614E6CF0883 /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		0CC6533058351EAE9EFE967C02DB3CF9 /* ErrorMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
+		0DCA6A6663BF50284F1142BBBD480678 /* AbstractValidationRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AbstractValidationRule.swift; sourceTree = "<group>"; };
+		111B8CE3F5E9EAC69C7D0F1E47368D05 /* BeTrue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BeTrue.swift; sourceTree = "<group>"; };
+		135CBA91C400D742EE10B4BB34A8CC21 /* Pods-ExampleApp-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ExampleApp-acknowledgements.plist"; sourceTree = "<group>"; };
+		137033F5472EF5B9A479B8012FA3AEF2 /* Pods-FluidValidator_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FluidValidator_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		18857F4BA0A404852B46D7269CB9492A /* Validatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Validatable.swift; sourceTree = "<group>"; };
+		1FB52D07C3E5B6A9FFCEB2C19F2DCA84 /* FluidValidator-iOS8.3.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "FluidValidator-iOS8.3.xcconfig"; sourceTree = "<group>"; };
+		219218B8B9E90ECADD0960AD6240AACD /* FluidValidator-iOS9.3.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "FluidValidator-iOS9.3.modulemap"; path = "../FluidValidator-iOS9.3/FluidValidator-iOS9.3.modulemap"; sourceTree = "<group>"; };
+		28FC06901C75AB06FC9D166AA06D8D83 /* FluidValidator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FluidValidator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C94C6B2201CC4C7A622DB186D19AC13 /* Pods-FluidValidator_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FluidValidator_Tests-resources.sh"; sourceTree = "<group>"; };
+		2CBB02A20B7A17B1A305345DF72B8715 /* FluidValidator-iOS8.3-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FluidValidator-iOS8.3-dummy.m"; sourceTree = "<group>"; };
+		30412E64772D54D44EA5562E967481F2 /* Pods-ExampleApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ExampleApp.modulemap"; sourceTree = "<group>"; };
+		3089B71948B988F79461E788DDFE3950 /* FluidValidator-iOS8.3-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FluidValidator-iOS8.3-prefix.pch"; sourceTree = "<group>"; };
+		3B4BE70EDC7F73998CD8CF620D2378B7 /* AbstractValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AbstractValidator.swift; sourceTree = "<group>"; };
+		3C4DD5352994E6E2E7021FA15A1D3C70 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../FluidValidator-iOS9.3/Info.plist"; sourceTree = "<group>"; };
+		3CD3286D51A9A1F86A54568630C6782A /* BeNotNil.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BeNotNil.swift; sourceTree = "<group>"; };
+		445CCE31C3FE708ADD1896EBADD63B54 /* FluidValidator-iOS9.3-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FluidValidator-iOS9.3-umbrella.h"; path = "../FluidValidator-iOS9.3/FluidValidator-iOS9.3-umbrella.h"; sourceTree = "<group>"; };
+		4B2849AC9699274EBC2A0B22AEB179E5 /* InRange.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InRange.swift; sourceTree = "<group>"; };
+		4EC8EA1CC8A517B6FC0358BF00B7A29E /* Pods-ExampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ExampleApp.release.xcconfig"; sourceTree = "<group>"; };
+		5BF35D4A528306D05E2D22FA120A4D92 /* Pods-ExampleApp-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ExampleApp-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5DAA237FCFACCF9B57BB6F99608C2585 /* Pods-ExampleApp-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ExampleApp-umbrella.h"; sourceTree = "<group>"; };
+		630C9E4169EC4A9A44F9AA9E2EB4B308 /* Pods-ExampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ExampleApp.debug.xcconfig"; sourceTree = "<group>"; };
+		6AB6FDEA425330E89A72B16DC3702C05 /* Pods_ExampleApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExampleApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70E4FA2C5B702C35E1817F4FD9AE93DF /* RegexMatch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegexMatch.swift; sourceTree = "<group>"; };
+		71FCBD58896C0B80C406B321B6820237 /* Pods_FluidValidator_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FluidValidator_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		744C86B6A1EC46CA7AAFF45380B59AB3 /* Pods-FluidValidator_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FluidValidator_Tests-umbrella.h"; sourceTree = "<group>"; };
+		7CB5B6DA30CB92D87A2877F637DC9DC2 /* Pods-ExampleApp-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ExampleApp-resources.sh"; sourceTree = "<group>"; };
+		7DC80B4C5693AB33BC072868D3ABEE42 /* LessThan.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LessThan.swift; sourceTree = "<group>"; };
+		81A9398AF948597DD2AA56FF9F97F28E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8307F8F744F1B2508A8C3FD36C17BB69 /* FluidValidator-iOS9.3-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FluidValidator-iOS9.3-dummy.m"; path = "../FluidValidator-iOS9.3/FluidValidator-iOS9.3-dummy.m"; sourceTree = "<group>"; };
+		84D88F863AC8F8E8FE2C693F9736FB8E /* FluidValidator-iOS8.3-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FluidValidator-iOS8.3-umbrella.h"; sourceTree = "<group>"; };
+		85E6DAC935CD1D119CF1F5393BEBF8D4 /* Pods-FluidValidator_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FluidValidator_Tests-dummy.m"; sourceTree = "<group>"; };
+		8EC116DEA0A685DCAA932CD1054244E2 /* FluidValidator.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = FluidValidator.bundle; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9458DAD401E6402A98B8A713118F7FE9 /* GenericRule.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = GenericRule.swift; sourceTree = "<group>"; };
+		956ED1E9E4794542E3F04BAFD5DC0463 /* Pods-FluidValidator_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FluidValidator_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		9A05C7537AAC082CE2494B09E2B704B5 /* BeNotEmpty.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BeNotEmpty.swift; sourceTree = "<group>"; };
+		A63DD18293B9772E3E159BC1E24D00DF /* Pods-ExampleApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ExampleApp-dummy.m"; sourceTree = "<group>"; };
+		A66E9E695BE7AB0D3705D325A28E4AAE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA95CC353E1215DED186D3FBAC54DD49 /* FluidValidator-iOS9.3.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "FluidValidator-iOS9.3.xcconfig"; path = "../FluidValidator-iOS9.3/FluidValidator-iOS9.3.xcconfig"; sourceTree = "<group>"; };
+		B236DEBF52C9B894268CADBE44BBD8C5 /* Pods-FluidValidator_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FluidValidator_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D88B07393B56EBF0FCBC9C56E6CA1143 /* LocalizationHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LocalizationHelper.swift; sourceTree = "<group>"; };
+		D88FE7760BF045C07758D651411DED9E /* FluidValidator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FluidValidator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D96BFD403D87069AE1A8401A66FBCF85 /* EnumeratorValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EnumeratorValidator.swift; sourceTree = "<group>"; };
+		DC467F3FAB1459EAEA458DF106818E04 /* Pods-ExampleApp-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ExampleApp-frameworks.sh"; sourceTree = "<group>"; };
+		E1162724874B7BF72307477AC9CFF33A /* Pods-FluidValidator_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-FluidValidator_Tests.modulemap"; sourceTree = "<group>"; };
+		E3FAC5C37E0A64CDB9FB8CB7B02E827B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECA45C6F5BFCA10851ED8B6A269019B0 /* Pods-FluidValidator_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FluidValidator_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		EE11CC69B621FE807692A13E450B576E /* FailMessage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FailMessage.swift; sourceTree = "<group>"; };
+		F70D2EA8E59D6C2E847DE6135BF33415 /* FluidValidator-iOS9.3-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FluidValidator-iOS9.3-prefix.pch"; path = "../FluidValidator-iOS9.3/FluidValidator-iOS9.3-prefix.pch"; sourceTree = "<group>"; };
+		F8DC04F5696E556DBA3A185C5994AAD2 /* FluidValidator-iOS8.3.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "FluidValidator-iOS8.3.modulemap"; sourceTree = "<group>"; };
+		FC6AEA67DEDC4DCF9EC9A5D108480217 /* ValidationBase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ValidationBase.swift; sourceTree = "<group>"; };
+		FD8CE3C95D78CA0F6717D9AF344C3E21 /* Pods-FluidValidator_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FluidValidator_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		149AA93E04118620185E2951E22436AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF5FD4218E5D2FBFA1A0C39446EC5F0C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		40013C0B29DE09CCA463E7E8AC7BFDCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA7BA8BFD421F92F9DDE8AA5D968A065 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D455B755D79C7CB2CE6D130A7A2BDAFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DDC0F1C772AB60CDC5B5D5B2F8168BE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB7FADE37C5FC8282A11C2F7CD01C813 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C6505A017E0EDDD48E836838D5D5BC1 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0BE55561B3D4B1841B3998D6B12D4290 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F8DC04F5696E556DBA3A185C5994AAD2 /* FluidValidator-iOS8.3.modulemap */,
+				1FB52D07C3E5B6A9FFCEB2C19F2DCA84 /* FluidValidator-iOS8.3.xcconfig */,
+				2CBB02A20B7A17B1A305345DF72B8715 /* FluidValidator-iOS8.3-dummy.m */,
+				3089B71948B988F79461E788DDFE3950 /* FluidValidator-iOS8.3-prefix.pch */,
+				84D88F863AC8F8E8FE2C693F9736FB8E /* FluidValidator-iOS8.3-umbrella.h */,
+				219218B8B9E90ECADD0960AD6240AACD /* FluidValidator-iOS9.3.modulemap */,
+				AA95CC353E1215DED186D3FBAC54DD49 /* FluidValidator-iOS9.3.xcconfig */,
+				8307F8F744F1B2508A8C3FD36C17BB69 /* FluidValidator-iOS9.3-dummy.m */,
+				F70D2EA8E59D6C2E847DE6135BF33415 /* FluidValidator-iOS9.3-prefix.pch */,
+				445CCE31C3FE708ADD1896EBADD63B54 /* FluidValidator-iOS9.3-umbrella.h */,
+				A66E9E695BE7AB0D3705D325A28E4AAE /* Info.plist */,
+				3C4DD5352994E6E2E7021FA15A1D3C70 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/FluidValidator-iOS8.3";
+			sourceTree = "<group>";
+		};
+		22763444E054433E56BBE63A630D4908 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				0DCA6A6663BF50284F1142BBBD480678 /* AbstractValidationRule.swift */,
+				3B4BE70EDC7F73998CD8CF620D2378B7 /* AbstractValidator.swift */,
+				D96BFD403D87069AE1A8401A66FBCF85 /* EnumeratorValidator.swift */,
+				0CC6533058351EAE9EFE967C02DB3CF9 /* ErrorMessage.swift */,
+				EE11CC69B621FE807692A13E450B576E /* FailMessage.swift */,
+				D88B07393B56EBF0FCBC9C56E6CA1143 /* LocalizationHelper.swift */,
+				18857F4BA0A404852B46D7269CB9492A /* Validatable.swift */,
+				0CA20CD6F606FD3938B01614E6CF0883 /* Validation.swift */,
+				FC6AEA67DEDC4DCF9EC9A5D108480217 /* ValidationBase.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		254EB62A3E67261719CD06FA9EAC08B5 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				35657D99796408A365A6F9EB3D25196C /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		2976800E792BCAA96E0DEE7068597A98 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				75A6290DC17BF3A23E62515059C7A82E /* Pod */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		35657D99796408A365A6F9EB3D25196C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				22763444E054433E56BBE63A630D4908 /* Core */,
+				7C81BFF8ED649A92CE0DC3291A3F62F9 /* Validators */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		43C9A37F61BA0FF468BC164189EEFB23 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A8C92B7A5DEAAE2AA97683A3C336E40D /* Pods-ExampleApp */,
+				5B10810FDD079CC4AED510512E8F3CDD /* Pods-FluidValidator_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		5B10810FDD079CC4AED510512E8F3CDD /* Pods-FluidValidator_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				81A9398AF948597DD2AA56FF9F97F28E /* Info.plist */,
+				E1162724874B7BF72307477AC9CFF33A /* Pods-FluidValidator_Tests.modulemap */,
+				137033F5472EF5B9A479B8012FA3AEF2 /* Pods-FluidValidator_Tests-acknowledgements.markdown */,
+				FD8CE3C95D78CA0F6717D9AF344C3E21 /* Pods-FluidValidator_Tests-acknowledgements.plist */,
+				85E6DAC935CD1D119CF1F5393BEBF8D4 /* Pods-FluidValidator_Tests-dummy.m */,
+				B236DEBF52C9B894268CADBE44BBD8C5 /* Pods-FluidValidator_Tests-frameworks.sh */,
+				2C94C6B2201CC4C7A622DB186D19AC13 /* Pods-FluidValidator_Tests-resources.sh */,
+				744C86B6A1EC46CA7AAFF45380B59AB3 /* Pods-FluidValidator_Tests-umbrella.h */,
+				956ED1E9E4794542E3F04BAFD5DC0463 /* Pods-FluidValidator_Tests.debug.xcconfig */,
+				ECA45C6F5BFCA10851ED8B6A269019B0 /* Pods-FluidValidator_Tests.release.xcconfig */,
+			);
+			name = "Pods-FluidValidator_Tests";
+			path = "Target Support Files/Pods-FluidValidator_Tests";
+			sourceTree = "<group>";
+		};
+		75A6290DC17BF3A23E62515059C7A82E /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				8EC116DEA0A685DCAA932CD1054244E2 /* FluidValidator.bundle */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		76139E42119EF56A6B8EB17FD14DA9D1 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5C05AF5CCC7AC1C87EB9C1FACD6B506 /* FluidValidator */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		7C81BFF8ED649A92CE0DC3291A3F62F9 /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				9A05C7537AAC082CE2494B09E2B704B5 /* BeNotEmpty.swift */,
+				3CD3286D51A9A1F86A54568630C6782A /* BeNotNil.swift */,
+				111B8CE3F5E9EAC69C7D0F1E47368D05 /* BeTrue.swift */,
+				9458DAD401E6402A98B8A713118F7FE9 /* GenericRule.swift */,
+				057A32990B8D6FDB94E242842BC050B5 /* GreaterThan.swift */,
+				4B2849AC9699274EBC2A0B22AEB179E5 /* InRange.swift */,
+				7DC80B4C5693AB33BC072868D3ABEE42 /* LessThan.swift */,
+				70E4FA2C5B702C35E1817F4FD9AE93DF /* RegexMatch.swift */,
+				00D5C08A04B8D563510F330C6071D6F6 /* ValidEmail.swift */,
+			);
+			path = Validators;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				76139E42119EF56A6B8EB17FD14DA9D1 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				7E7C81E371DEDBC0466FF5BC5CAF2E13 /* Products */,
+				43C9A37F61BA0FF468BC164189EEFB23 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7E7C81E371DEDBC0466FF5BC5CAF2E13 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28FC06901C75AB06FC9D166AA06D8D83 /* FluidValidator.framework */,
+				D88FE7760BF045C07758D651411DED9E /* FluidValidator.framework */,
+				6AB6FDEA425330E89A72B16DC3702C05 /* Pods_ExampleApp.framework */,
+				71FCBD58896C0B80C406B321B6820237 /* Pods_FluidValidator_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A8C92B7A5DEAAE2AA97683A3C336E40D /* Pods-ExampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				E3FAC5C37E0A64CDB9FB8CB7B02E827B /* Info.plist */,
+				30412E64772D54D44EA5562E967481F2 /* Pods-ExampleApp.modulemap */,
+				5BF35D4A528306D05E2D22FA120A4D92 /* Pods-ExampleApp-acknowledgements.markdown */,
+				135CBA91C400D742EE10B4BB34A8CC21 /* Pods-ExampleApp-acknowledgements.plist */,
+				A63DD18293B9772E3E159BC1E24D00DF /* Pods-ExampleApp-dummy.m */,
+				DC467F3FAB1459EAEA458DF106818E04 /* Pods-ExampleApp-frameworks.sh */,
+				7CB5B6DA30CB92D87A2877F637DC9DC2 /* Pods-ExampleApp-resources.sh */,
+				5DAA237FCFACCF9B57BB6F99608C2585 /* Pods-ExampleApp-umbrella.h */,
+				630C9E4169EC4A9A44F9AA9E2EB4B308 /* Pods-ExampleApp.debug.xcconfig */,
+				4EC8EA1CC8A517B6FC0358BF00B7A29E /* Pods-ExampleApp.release.xcconfig */,
+			);
+			name = "Pods-ExampleApp";
+			path = "Target Support Files/Pods-ExampleApp";
+			sourceTree = "<group>";
+		};
+		B5C05AF5CCC7AC1C87EB9C1FACD6B506 /* FluidValidator */ = {
+			isa = PBXGroup;
+			children = (
+				254EB62A3E67261719CD06FA9EAC08B5 /* Pod */,
+				2976800E792BCAA96E0DEE7068597A98 /* Resources */,
+				0BE55561B3D4B1841B3998D6B12D4290 /* Support Files */,
+			);
+			name = FluidValidator;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		7ACD5BB673BD1230895DC98C7D72A288 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE5883091BA11A7AEACBCF1673238410 /* FluidValidator-iOS9.3-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD21B3C7F3C24B4460ED935F69A26B70 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C035A34D9482ECC345CA40084C98ED9 /* Pods-FluidValidator_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCFBACA26C64C3BD3FFAFFFB26330458 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A33104FC8552B64A23D24F844BEED54 /* Pods-ExampleApp-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD1056346D00996F1D9DBAF52F45C9A6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F84471155E5E2795354015BAA5EB7AEF /* FluidValidator-iOS8.3-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		298D2A2D2746F252A5D9DE3FB3DB0471 /* Pods-ExampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFD3EEF87597ED533DE052201EBB747F /* Build configuration list for PBXNativeTarget "Pods-ExampleApp" */;
+			buildPhases = (
+				83CB871AB09F0BCD4B18FE873A6EEB8D /* Sources */,
+				149AA93E04118620185E2951E22436AD /* Frameworks */,
+				CCFBACA26C64C3BD3FFAFFFB26330458 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4553AEBFB78431B3E410692B206D712E /* PBXTargetDependency */,
+			);
+			name = "Pods-ExampleApp";
+			productName = "Pods-ExampleApp";
+			productReference = 6AB6FDEA425330E89A72B16DC3702C05 /* Pods_ExampleApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8496220B7E0E3722DC23B2BA26592399 /* Pods-FluidValidator_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6B8F5EE6E2373FCD0D4F80C18669962 /* Build configuration list for PBXNativeTarget "Pods-FluidValidator_Tests" */;
+			buildPhases = (
+				66DD39A52C4BADFF3C175871F6B7DF92 /* Sources */,
+				40013C0B29DE09CCA463E7E8AC7BFDCA /* Frameworks */,
+				AD21B3C7F3C24B4460ED935F69A26B70 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				335967FDAA4AE7525BECAE64C03A8F4C /* PBXTargetDependency */,
+			);
+			name = "Pods-FluidValidator_Tests";
+			productName = "Pods-FluidValidator_Tests";
+			productReference = 71FCBD58896C0B80C406B321B6820237 /* Pods_FluidValidator_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B1085580CE50E3560562608F6A1F4725 /* FluidValidator-iOS9.3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96352D90240846C6A679284DB03B6659 /* Build configuration list for PBXNativeTarget "FluidValidator-iOS9.3" */;
+			buildPhases = (
+				5B391E0C76139B530DFB2CBB92C1DA3C /* Sources */,
+				D455B755D79C7CB2CE6D130A7A2BDAFD /* Frameworks */,
+				626D84726D342EA788BE905DD9D3EFB9 /* Resources */,
+				7ACD5BB673BD1230895DC98C7D72A288 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FluidValidator-iOS9.3";
+			productName = "FluidValidator-iOS9.3";
+			productReference = D88FE7760BF045C07758D651411DED9E /* FluidValidator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CF60CCB95EA3661135D249BDBCBF6D87 /* FluidValidator-iOS8.3 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 465DB45856738B07E0B54F678920F398 /* Build configuration list for PBXNativeTarget "FluidValidator-iOS8.3" */;
+			buildPhases = (
+				7B3E10134564E24B1A39E6EB4C55868D /* Sources */,
+				EB7FADE37C5FC8282A11C2F7CD01C813 /* Frameworks */,
+				BAEFF5759DF87642621A4A4D716FC301 /* Resources */,
+				CD1056346D00996F1D9DBAF52F45C9A6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FluidValidator-iOS8.3";
+			productName = "FluidValidator-iOS8.3";
+			productReference = 28FC06901C75AB06FC9D166AA06D8D83 /* FluidValidator.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					298D2A2D2746F252A5D9DE3FB3DB0471 = {
+						LastSwiftMigration = 0800;
+					};
+					8496220B7E0E3722DC23B2BA26592399 = {
+						LastSwiftMigration = 0800;
+					};
+					B1085580CE50E3560562608F6A1F4725 = {
+						LastSwiftMigration = 0800;
+					};
+					CF60CCB95EA3661135D249BDBCBF6D87 = {
+						LastSwiftMigration = 0800;
+					};
+				};
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 7E7C81E371DEDBC0466FF5BC5CAF2E13 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF60CCB95EA3661135D249BDBCBF6D87 /* FluidValidator-iOS8.3 */,
+				B1085580CE50E3560562608F6A1F4725 /* FluidValidator-iOS9.3 */,
+				298D2A2D2746F252A5D9DE3FB3DB0471 /* Pods-ExampleApp */,
+				8496220B7E0E3722DC23B2BA26592399 /* Pods-FluidValidator_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		626D84726D342EA788BE905DD9D3EFB9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D73CE69FBAE2D7D1B34BC5BDFF89492 /* FluidValidator.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAEFF5759DF87642621A4A4D716FC301 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AA28888708B9BDD0EFF2CCA82B95E43 /* FluidValidator.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B391E0C76139B530DFB2CBB92C1DA3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				597834A5562D9458D048E400FF5FB5EC /* AbstractValidationRule.swift in Sources */,
+				FEBAABD5DC9EF08F70D0EEF59FA8F60D /* AbstractValidator.swift in Sources */,
+				F6BE1195A017038FA39EB20007E11B37 /* BeNotEmpty.swift in Sources */,
+				47AFA8C4A32EB342BDA191AFC4D30E11 /* BeNotNil.swift in Sources */,
+				496A6F7D4B0FFF6467297BE9C87204F2 /* BeTrue.swift in Sources */,
+				7F67EAD143E2D47861900C69EF9924EA /* EnumeratorValidator.swift in Sources */,
+				C87C4D2CF888380F279ED9622421CD8F /* ErrorMessage.swift in Sources */,
+				6A5973BC9754806897D7A651641FAEFF /* FailMessage.swift in Sources */,
+				1A23269628937A469B00585FEE92A7A6 /* FluidValidator-iOS9.3-dummy.m in Sources */,
+				3A7F328F9CE8341A453691CB20769839 /* GenericRule.swift in Sources */,
+				D3D5B4D583B9EA5FEFA538F2C26F3323 /* GreaterThan.swift in Sources */,
+				D7C5E18496712B12B6874257DF814DE5 /* InRange.swift in Sources */,
+				FAF161449F5ABD87E793A66EC652A3E5 /* LessThan.swift in Sources */,
+				B50136C7421A58FAD28EF72E482693A1 /* LocalizationHelper.swift in Sources */,
+				B04139EE7449260E4E3CE8D899CE9007 /* RegexMatch.swift in Sources */,
+				F060D3B61C99D8FDF1F12416BE682122 /* Validatable.swift in Sources */,
+				D1301B60503FFB726135602720392FB5 /* Validation.swift in Sources */,
+				8BF9B550C9E94E93252F2AAF9D726B76 /* ValidationBase.swift in Sources */,
+				482FC93BE66E2507B967CED8DDCCDDC8 /* ValidEmail.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66DD39A52C4BADFF3C175871F6B7DF92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9687EAD44EC7254E38B4735F32C3F5 /* Pods-FluidValidator_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B3E10134564E24B1A39E6EB4C55868D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				065473FEF8690433521069EF48005363 /* AbstractValidationRule.swift in Sources */,
+				C0C85E79DA9AA9E0AEE293EFEA4984E1 /* AbstractValidator.swift in Sources */,
+				7C3D0B3216EEA08B311D54669CD3AEFA /* BeNotEmpty.swift in Sources */,
+				132582207B4FAE741A48635340381826 /* BeNotNil.swift in Sources */,
+				65F956B242515ABE4727E783970B9B8D /* BeTrue.swift in Sources */,
+				4A134B0D633A71C4413300D26890BA38 /* EnumeratorValidator.swift in Sources */,
+				F254EAC2D4726045949902A7E7C75F94 /* ErrorMessage.swift in Sources */,
+				D92D67A4051F1F6BE8875C849AA1BEB3 /* FailMessage.swift in Sources */,
+				02706E03CA08C385AA90ADAC32EA84CE /* FluidValidator-iOS8.3-dummy.m in Sources */,
+				11C245EA563936DFF6F049C932FC19D4 /* GenericRule.swift in Sources */,
+				A6EC764B6A5064EBA1CC32E4E356B1A5 /* GreaterThan.swift in Sources */,
+				926655F265BB58510EF2AFAAF4188E66 /* InRange.swift in Sources */,
+				8900FDA8D607470B0027F8C3BE800A27 /* LessThan.swift in Sources */,
+				CE410A7A18607EDF6B3014BC2206D6C5 /* LocalizationHelper.swift in Sources */,
+				F8F4B213BF1EAB5B8DA9254488B19021 /* RegexMatch.swift in Sources */,
+				3074487D370F254D18CB4659346AC1E0 /* Validatable.swift in Sources */,
+				28CEBDA46AEF3E781EB399D9B756D7A2 /* Validation.swift in Sources */,
+				226E4769939C8995CB12D934E1BEC6BB /* ValidationBase.swift in Sources */,
+				74495A00330470624D0FA0E283975FA4 /* ValidEmail.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83CB871AB09F0BCD4B18FE873A6EEB8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3FE2B0A9DE55AE22F4B255ED36A74E0F /* Pods-ExampleApp-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		335967FDAA4AE7525BECAE64C03A8F4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FluidValidator-iOS8.3";
+			target = CF60CCB95EA3661135D249BDBCBF6D87 /* FluidValidator-iOS8.3 */;
+			targetProxy = E1BEFE7771744262893830976AD6262C /* PBXContainerItemProxy */;
+		};
+		4553AEBFB78431B3E410692B206D712E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FluidValidator-iOS9.3";
+			target = B1085580CE50E3560562608F6A1F4725 /* FluidValidator-iOS9.3 */;
+			targetProxy = 30C4BD60149E198FD856D8A7658516BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		170A04E6B0265AFBBA3660AA99A1213A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA95CC353E1215DED186D3FBAC54DD49 /* FluidValidator-iOS9.3.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FluidValidator-iOS9.3/FluidValidator-iOS9.3-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FluidValidator-iOS9.3/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FluidValidator-iOS9.3/FluidValidator-iOS9.3.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FluidValidator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1D0B7034DCC0C829C10545BAA2920994 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 630C9E4169EC4A9A44F9AA9E2EB4B308 /* Pods-ExampleApp.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ExampleApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ExampleApp/Pods-ExampleApp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ExampleApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1E63275544A298BD1C3B61CB2484C0EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECA45C6F5BFCA10851ED8B6A269019B0 /* Pods-FluidValidator_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FluidValidator_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FluidValidator_Tests/Pods-FluidValidator_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FluidValidator_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3219D3D44F6CDA237AE87FE7A82D7211 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FB52D07C3E5B6A9FFCEB2C19F2DCA84 /* FluidValidator-iOS8.3.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FluidValidator-iOS8.3/FluidValidator-iOS8.3-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FluidValidator-iOS8.3/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FluidValidator-iOS8.3/FluidValidator-iOS8.3.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FluidValidator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9F08E5E5F09F087426ECAB056FFB8C3F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA95CC353E1215DED186D3FBAC54DD49 /* FluidValidator-iOS9.3.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FluidValidator-iOS9.3/FluidValidator-iOS9.3-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FluidValidator-iOS9.3/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FluidValidator-iOS9.3/FluidValidator-iOS9.3.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FluidValidator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A12F04514B2647D66FD6C347BB3F727C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FB52D07C3E5B6A9FFCEB2C19F2DCA84 /* FluidValidator-iOS8.3.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FluidValidator-iOS8.3/FluidValidator-iOS8.3-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FluidValidator-iOS8.3/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FluidValidator-iOS8.3/FluidValidator-iOS8.3.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FluidValidator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BA91212F99B1A6C0FC19A8D3C6B349C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 956ED1E9E4794542E3F04BAFD5DC0463 /* Pods-FluidValidator_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-FluidValidator_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FluidValidator_Tests/Pods-FluidValidator_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_FluidValidator_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D7D0A73BC9D08691423162E1327D7A32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EC8EA1CC8A517B6FC0358BF00B7A29E /* Pods-ExampleApp.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-ExampleApp/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ExampleApp/Pods-ExampleApp.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ExampleApp;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3E3D092A3FF7311A98E44BBA36FFD12 /* Debug */,
+				0ACDCBCB0B6796575F46FFA2F5410C6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		465DB45856738B07E0B54F678920F398 /* Build configuration list for PBXNativeTarget "FluidValidator-iOS8.3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3219D3D44F6CDA237AE87FE7A82D7211 /* Debug */,
+				A12F04514B2647D66FD6C347BB3F727C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96352D90240846C6A679284DB03B6659 /* Build configuration list for PBXNativeTarget "FluidValidator-iOS9.3" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				170A04E6B0265AFBBA3660AA99A1213A /* Debug */,
+				9F08E5E5F09F087426ECAB056FFB8C3F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6B8F5EE6E2373FCD0D4F80C18669962 /* Build configuration list for PBXNativeTarget "Pods-FluidValidator_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA91212F99B1A6C0FC19A8D3C6B349C4 /* Debug */,
+				1E63275544A298BD1C3B61CB2484C0EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFD3EEF87597ED533DE052201EBB747F /* Build configuration list for PBXNativeTarget "Pods-ExampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D0B7034DCC0C829C10545BAA2920994 /* Debug */,
+				D7D0A73BC9D08691423162E1327D7A32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

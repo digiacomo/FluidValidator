@@ -8,13 +8,13 @@
 
 import Foundation
 
-public class ValidEmail: RegexMatch {
+open class ValidEmail: RegexMatch {
     public init() {
         let regex = "^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$"
         super.init(regex: regex)
     }
     
-    override public func performValidation(object: AnyObject?) -> Bool {
+    override open func performValidation(_ object: AnyObject?) -> Bool {
         return super.performValidation(object)
     }
 }

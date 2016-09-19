@@ -8,9 +8,9 @@
 
 import Foundation
 
-public class BeNotNil : AbstractValidationRule {
+open class BeNotNil : AbstractValidationRule {
     
-    override public func performValidation(object: AnyObject?) -> Bool {
+    override open func performValidation(_ object: AnyObject?) -> Bool {
         return object != nil
     }
     

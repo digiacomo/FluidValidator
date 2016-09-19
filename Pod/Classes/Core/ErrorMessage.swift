@@ -20,7 +20,7 @@ extension Array where Element:ErrorMessage {
     var hash: Int {
         get {
             var hash = 0
-            forEach { (x: Array.Generator.Element) -> () in
+            forEach { (x: Array.Iterator.Element) -> () in
                 hash = hash ^ x.hashValue
             }
             return hash
@@ -28,16 +28,16 @@ extension Array where Element:ErrorMessage {
     }
 }
 
-public class ErrorMessage:Hashable {
-    public var compact:String
-    public var extended:String
+open class ErrorMessage:Hashable {
+    open var compact:String
+    open var extended:String
     
     init() {
         self.compact = ""
         self.extended = ""
     }
     
-    public var hashValue: Int {
+    open var hashValue: Int {
         get {
             return self.compact.hash ^ self.extended.hash
         }

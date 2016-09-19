@@ -7,9 +7,29 @@
 //
 
 import Foundation
+fileprivate func < <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l < r
+  case (nil, _?):
+    return true
+  default:
+    return false
+  }
+}
 
-public class BeNotEmpty : BeNotNil {
-    override public func performValidation(object: AnyObject?) -> Bool {
+fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
+  switch (lhs, rhs) {
+  case let (l?, r?):
+    return l > r
+  default:
+    return rhs < lhs
+  }
+}
+
+
+open class BeNotEmpty : BeNotNil {
+    override open func performValidation(_ object: AnyObject?) -> Bool {
         if (!super.performValidation(object)) {
             return false
         }

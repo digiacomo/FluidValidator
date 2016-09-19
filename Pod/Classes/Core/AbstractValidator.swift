@@ -8,14 +8,14 @@
 
 import Foundation
 
-public class AbstractValidator<T:AnyObject> : ValidationBase {
-    private var validations:Array<Validation<T>> = Array<Validation<T>>()
+open class AbstractValidator<T:AnyObject> : ValidationBase {
+    fileprivate var validations:Array<Validation<T>> = Array<Validation<T>>()
     
     public override init() {
         super.init()
     }
     
-    public func validate(object: AnyObject?) -> Bool {
+    open func validate(_ object: AnyObject?) -> Bool {
         var result = true
         for validation in self.validations {
             guard let object = object as? T else {
@@ -27,7 +27,7 @@ public class AbstractValidator<T:AnyObject> : ValidationBase {
         return result
     }
     
-    func validate(name:String, context: T) -> Bool {
+    func validate(_ name:String, context: T) -> Bool {
         let validations = self.validations.filter({(validation) -> Bool in
             validation.validationName == name
         })
@@ -39,24 +39,24 @@ public class AbstractValidator<T:AnyObject> : ValidationBase {
         return validationResult
     }
     
-    public func addValidation(name:String, targetGetter:(context:T)->(AnyObject?)) -> Validation<T> {
+    open func addValidation(_ name:String, targetGetter:@escaping (_ context:T)->(AnyObject?)) -> Validation<T> {
         let validation = Validation(name: name, targetGetter: targetGetter)
         self.validations.append(validation)
         return validation
     }
     
-    public func addValidation(property: Selector) -> Void {
-        let name = String(property)
+    open func addValidation(_ property: Selector) -> Void {
+        let name = String(describing: property)
         addValidation(name) { (context) -> (AnyObject?) in
             
             guard let nsContext = context as? NSObject else {
                 return nil
             }
-            return nsContext.performSelector(property) as? AnyObject
+            return nsContext.perform(property) as? AnyObject
         }
     }
     
-    public func allErrors() -> FailMessage {
+    open func allErrors() -> FailMessage {
         let error = FailMessage()
         let validationNames = self.validations.map({(validation) -> String in
             validation.validationName
@@ -72,7 +72,7 @@ public class AbstractValidator<T:AnyObject> : ValidationBase {
     }
     
     
-    func errorsForValidation(name:String) -> FailMessage {
+    func errorsForValidation(_ name:String) -> FailMessage {
         let validations = self.validations.filter { (validation) -> Bool in
             validation.validationName == name
         }
@@ -87,14 +87,14 @@ public class AbstractValidator<T:AnyObject> : ValidationBase {
     }
     
     // override ValidationBase (which implements Validatable)
-    override public func performValidation(object:AnyObject?) -> Bool {
+    override open func performValidation(_ object:AnyObject?) -> Bool {
         if let object = object as? T {
             return self.validate(object)
         }
         return false
     }
     
-    override public func hydrateFailMessage(message: FailMessage, localizedSubject: String, failValue: AnyObject?, context: AnyObject) {
+    override open func hydrateFailMessage(_ message: FailMessage, localizedSubject: String, failValue: AnyObject?, context: AnyObject) {
         let error = ErrorMessage()
         error.compact = self.errorMessage(localizedSubject, failValue: failValue, context: context)
         error.extended = self.errorMessageExtended(localizedSubject, failValue: failValue, context: context)
@@ -107,7 +107,7 @@ public class AbstractValidator<T:AnyObject> : ValidationBase {
     
     override func errorTextLocalized() -> String {
         var message = super.errorTextLocalized()
-        let className = String(self.dynamicType.self)
+        let className = String(describing: type(of: self).self)
         var key = String(format: "%@.error.message", className)
         if(message == key) {
             key = "AbstractValidator.error.message"
@@ -118,7 +118,7 @@ public class AbstractValidator<T:AnyObject> : ValidationBase {
     
     override func errorTextExtendedLocalized() -> String {
         var message = super.errorTextExtendedLocalized()
-        let className = String(self.dynamicType.self)
+        let className = String(describing: type(of: self).self)
         var key = String(format: "%@.error.message.extended", className)
         if(message == key) {
             key = "AbstractValidator.error.message.extended"

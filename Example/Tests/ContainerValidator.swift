@@ -13,7 +13,7 @@ class ContainerValidator : AbstractValidator<ContainerObject> {
     override init() {
         super.init()
         self.addValidation("test") { (context) -> (AnyObject?) in
-            context.test
+            context.test as AnyObject?
         }.addRule(BeNotEmpty())
         
         self.addValidation("example") { (context) -> (AnyObject?) in

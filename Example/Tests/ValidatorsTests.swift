@@ -23,7 +23,7 @@ class ValidatorsTests: XCTestCase {
     
     func testBeNotNil() {
         let validation = Validation(name: "testValidation") { (context:Example) -> (AnyObject?) in
-            return context.testProperty
+            return context.testProperty as AnyObject?
         }
         let rule = BeNotNil()
         validation.addRule(rule)
@@ -47,7 +47,7 @@ class ValidatorsTests: XCTestCase {
     
     func testBeNotEmpty() {
         let validation = Validation(name: "testValidation") { (context:Example) -> (AnyObject?) in
-            return context.testProperty
+            return context.testProperty as AnyObject?
         }
         let rule = BeNotEmpty()
         validation.addRule(rule)
@@ -70,7 +70,7 @@ class ValidatorsTests: XCTestCase {
     
     func testBeTrue() {
         let validation = Validation(name: "testValidation") { (context:Example) -> (AnyObject?) in
-            return context.isTrue
+            return context.isTrue as AnyObject?
         }
         let rule = BeTrue()
         validation.addRule(rule)
@@ -93,7 +93,7 @@ class ValidatorsTests: XCTestCase {
     
     func testGreaterThan() {
         let validation = Validation(name: "testValidation") { (context:Example) -> (AnyObject?) in
-            return context.number
+            return context.number as AnyObject?
         }
         let rule = GreaterThan(limit: 4, includeLimit: true)
         validation.addRule(rule)
@@ -121,7 +121,7 @@ class ValidatorsTests: XCTestCase {
     
     func testLessThan() {
         let validation = Validation(name: "testValidation") { (context:Example) -> (AnyObject?) in
-            return context.number
+            return context.number as AnyObject?
         }
         let rule = LessThan(limit: 4, true)
         validation.addRule(rule)
@@ -149,7 +149,7 @@ class ValidatorsTests: XCTestCase {
     
     func testInRange() {
         let validation = Validation(name: "testValidation") { (context:Example) -> (AnyObject?) in
-            return context.number
+            return context.number as AnyObject?
         }
         let rule = InRange(min: 1, max: 5, mode: .MinMaxExluded)
         validation.addRule(rule)
@@ -177,7 +177,7 @@ class ValidatorsTests: XCTestCase {
     
     func testRegexMatch() {
         let validation = Validation(name: "testValidation") { (context:Example) -> (AnyObject?) in
-            return context.altProperty
+            return context.altProperty as AnyObject?
         }
         let rule = RegexMatch(regex: "^aaa.+$")
         validation.addRule(rule)
@@ -199,7 +199,7 @@ class ValidatorsTests: XCTestCase {
     
     func testValidEmail() {
         let validation = Validation(name: "testValidation") { (context:Example) -> (AnyObject?) in
-            return context.altProperty
+            return context.altProperty as AnyObject?
         }
         let rule = ValidEmail()
         validation.addRule(rule)

@@ -12,17 +12,17 @@ import FluidValidator
 class RegistrationValidator:AbstractValidator<UserRegistration> {
     internal override init() {
         super.init()
-        
+
         self.addValidation("firstname") { (context) -> (AnyObject?) in
-            context.firstname
+            context.firstname as AnyObject?
         }.addRule(BeNotEmpty())
         
         self.addValidation("lastname") { (context) -> (AnyObject?) in
-            context.lastname
+            context.lastname as AnyObject?
         }.addRule(BeNotEmpty())
         
         self.addValidation("email") { (context) -> (AnyObject?) in
-            context.email
+            context.email as AnyObject?
         }.addRule(ValidEmail())
     }
 }

@@ -14,11 +14,11 @@ class ListContainerValidator : AbstractValidator<ListContainer> {
         super.init()
         
         self.addValidation("string") { (context) -> (AnyObject?) in
-            context.string
+            context.string as AnyObject?
         }.addRule(BeNotEmpty())
         
         self.addValidation("arrExample") { (context) -> (AnyObject?) in
-            context.arrExample
+            context.arrExample as AnyObject?
         }.addRule(EnumeratorValidator(validatable: ExampleValidator()))
     }
 }

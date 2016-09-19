@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class UserRegistration {
+open class UserRegistration {
     var firstname:String?
     var lastname:String?
     var email:String?

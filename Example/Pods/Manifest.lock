@@ -1,5 +1,5 @@
 PODS:
-  - FluidValidator (0.1.1)
+  - FluidValidator (0.1.2)
 
 DEPENDENCIES:
   - FluidValidator (from `../`)
@@ -9,6 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FluidValidator: 5c763850d52cc75ebf936738ec9a9d6ab1ddb901
+  FluidValidator: 25bf6d8543b384b19933a072a2624643567f33c7
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: ccd0c37e6f190789df7bcf3966c6f7fdba253301
+
+COCOAPODS: 1.0.1

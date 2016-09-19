@@ -1,5 +1,5 @@
 framework module FluidValidator {
-  umbrella header "FluidValidator-umbrella.h"
+  umbrella header "FluidValidator-iOS9.3-umbrella.h"
 
   export *
   module * { export * }

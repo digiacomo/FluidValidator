@@ -12,7 +12,7 @@ public protocol Validatable {
     var overrideErrorMessage:String? {get set}
     var overrideErrorMessageExtended:String? {get set}
     
-    func performValidation(object:AnyObject?) -> Bool
+    func performValidation(_ object:AnyObject?) -> Bool
     
-    func hydrateFailMessage(message:FailMessage, localizedSubject:String, failValue:AnyObject?, context:AnyObject) -> ()
+    func hydrateFailMessage(_ message:FailMessage, localizedSubject:String, failValue:AnyObject?, context:AnyObject) -> ()
 }
