@@ -1,0 +1,10 @@
+/* 
+  object_validator_custom.strings
+  FluidValidator
+
+  Created by Antonio Di Giacomo on 27/04/16.
+  Copyright © 2016 CocoaPods. All rights reserved.
+*/
+//"Home.isLocked.error.name" = "is locked";
+//"BeTrue.error.message" = "Hey man, this must be active.";
+//"BeTrue.error.message.extended" = "%1$@ must be active. %2$@ passed.";

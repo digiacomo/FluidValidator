@@ -16,4 +16,9 @@ open class BeTrue : BeNotNil {
         }
         return object as? Bool ?? false
     }
+    
+    override func optionalValueDescription(_ value: AnyObject?) -> String {
+        let valueDescription = value as? Bool ?? false
+        return valueDescription ? "active" : "not active"
+    }
 }

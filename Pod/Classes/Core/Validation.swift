@@ -15,10 +15,10 @@ open class Validation<T:AnyObject> {
     var validationName:String
 
     var whenCondition:((_ context:T) -> (Bool))?
-    var targetGetter:(_ context:T)->(AnyObject?)
+    var targetGetter:(_ context:T)->(Any?)
     
     
-    public init(name:String, targetGetter:@escaping (_ context:T)->(AnyObject?)){
+    public init(name:String, targetGetter:@escaping (_ context:T)->(Any?)){
         self.validationName = name
         self.validatables = Array<Validatable>()
         self.error = FailMessage()
@@ -29,7 +29,7 @@ open class Validation<T:AnyObject> {
         self.error = FailMessage()
         
         for validatable in self.validatables {
-            let target = self.targetGetter(object)
+            let target = self.targetGetter(object) as AnyObject?
             
             if let whenCondition = self.whenCondition , !whenCondition(object) {
                 return true

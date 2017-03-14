@@ -41,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		0B361B70F1E9D191ACD2220C /* Pods_FluidValidator_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FluidValidator_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		160CFFE41E5E3ADA00AA3835 /* TestPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TestPlayground.playground; sourceTree = "<group>"; };
 		161E7C201C66146C00E43C0A /* ValidationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationTests.swift; sourceTree = "<group>"; };
 		161E7C221C6614DA00E43C0A /* Example.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		163216BE1C6649B6002444F1 /* ValidatorsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidatorsTests.swift; sourceTree = "<group>"; };
@@ -113,6 +114,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				160CFFE41E5E3ADA00AA3835 /* TestPlayground.playground */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				1652CDE51CD0166B0003E602 /* ExampleApp */,

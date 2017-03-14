@@ -39,7 +39,7 @@ open class AbstractValidator<T:AnyObject> : ValidationBase {
         return validationResult
     }
     
-    open func addValidation(_ name:String, targetGetter:@escaping (_ context:T)->(AnyObject?)) -> Validation<T> {
+    open func addValidation(_ name:String, targetGetter:@escaping (_ context:T)->(Any?)) -> Validation<T> {
         let validation = Validation(name: name, targetGetter: targetGetter)
         self.validations.append(validation)
         return validation

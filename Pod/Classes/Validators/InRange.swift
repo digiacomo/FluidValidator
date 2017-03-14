@@ -43,7 +43,7 @@ open class InRange : BeNotNil {
     
     override func errorMessage(_ subject: String, failValue: AnyObject?, context: AnyObject) -> String {
         let errMessage = self.errorTextLocalized()
-        return String(format: errMessage, subject, self.min, self.max, self.optionalValueDescription(failValue))
+        return String(format: errMessage, self.min, self.max)
     }
     
     override func errorMessageExtended(_ subject: String, failValue: AnyObject?, context: AnyObject) -> String {
