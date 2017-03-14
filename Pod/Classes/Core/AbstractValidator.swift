@@ -39,7 +39,7 @@ open class AbstractValidator<T:AnyObject> : ValidationBase {
         return validationResult
     }
     
-    open func addValidation(_ name:String, targetGetter:@escaping (_ context:T)->(Any?)) -> Validation<T> {
+    @discardableResult open func addValidation(_ name:String, targetGetter:@escaping (_ context:T)->(Any?)) -> Validation<T> {
         let validation = Validation(name: name, targetGetter: targetGetter)
         self.validations.append(validation)
         return validation
@@ -52,7 +52,7 @@ open class AbstractValidator<T:AnyObject> : ValidationBase {
             guard let nsContext = context as? NSObject else {
                 return nil
             }
-            return nsContext.perform(property) as? AnyObject
+            return nsContext.perform(property) as AnyObject
         }
     }
     
