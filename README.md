@@ -33,11 +33,10 @@ Given this object:
 
 import Foundation
 
-class Example {
-    var isTrue:Bool?
+class Home {
+    var isLocked:Bool?
     var number:Int?
-    var testProperty:String?
-    var altProperty:String?
+    var ownerName:String?
 }
 ```
 
@@ -48,25 +47,21 @@ Create a custom validator extending AbstractValidator specifing target class Exa
 import Foundation
 import FluidValidator
 
-class ExampleValidator : AbstractValidator<Example> {
+class HomeValidator : AbstractValidator<Home> {
     override init() {
         super.init()
         
-        self.addValidation("testProperty") { (context) -> (AnyObject?) in
-            context.testProperty
-        }.addRule(BeNotNil())
+        self.addValidation("number") { (context) -> (Any?) in
+            context.number
+        }.addRule(GreaterThan(limit: 3, includeLimit: false))
         
-        self.addValidation("altProperty") { (context) -> (AnyObject?) in
-            context.altProperty
+        self.addValidation("ownerName") { (context) -> (Any?) in
+            context.ownerName
         }.addRule(BeNotEmpty())
         
-        self.addValidation("isTrue") { (context) -> (AnyObject?) in
-            context.isTrue
+        self.addValidation("isLocked") { (context) -> (Any?) in
+            context.isLocked
         }.addRule(BeTrue())
-        
-        self.addValidation("number") { (context) -> (AnyObject?) in
-            context.number
-        }.addRule(LessThan(limit: 3, false))
     }
 }
 ```
@@ -75,9 +70,15 @@ Given this more complex object:
 ```swift
 import Foundation
 
-class ContainerObject {
-    var example:Example?
-    var test:String?
+class Home {
+    var isLocked:Bool?
+    var number:Int?
+    var ownerName:String?
+    var garage: Garage?
+}
+class Garage {
+  var isOpen: Bool?
+  var maxCars: Int?
 }
 ```
 The corresponding validator would be implemented this way:
@@ -85,16 +86,28 @@ The corresponding validator would be implemented this way:
 import Foundation
 import FluidValidator
 
-class ContainerValidator : AbstractValidator<ContainerObject> {
+class GarageValidator: AbstractValidator<Garage> {
     override init() {
         super.init()
-        self.addValidation("test") { (context) -> (AnyObject?) in
-            context.test
-        }.addRule(BeNotEmpty())
         
-        self.addValidation("example") { (context) -> (AnyObject?) in
-            context.example
-        }.addRule(ExampleValidator())
+        self.addValidation("isOpen") { (context) -> Any? in
+            context.isOpen
+        }.addRule(BeTrue())
+        
+        self.addValidation("maxCars") { (context) -> Any? in
+            context.maxCars
+        }.addRule(LessThan(limit: 2, true))
+    }
+}
+
+class HomeValidator : AbstractValidator<Home> {
+    override init() {
+        super.init()
+        
+        ...
+        self.addValidation("garage") { (context) -> (Any?) in
+            context.garage
+        }.addRule(GarageValidator())
     }
 }
 ```
@@ -105,25 +118,27 @@ regardless of your validators complexity, you can run validation process and ext
 
 ```swift
 
-	let example = Example()
-	example.testProperty = nil
-	example.altProperty = ""
-	example.number = 3
-	example.isTrue = false
+    let garage = Garage()
+    garage.isOpen = false
 
-	let validator = ExampleValidator()
-	let result = validator.validate(example)
-	let failMessage = validator.allErrors()
+    let home = Home()
+    home.isLocked = true
+    home.ownerName = "John Doe"
+    home.number = 2
+    home.garage = garage
+
+    let homeValidator = HomeValidator()
+    let result = homeValidator.validate(home)
+    let failMessage = homeValidator.allErrors()
 ```
 
 ### Get fail messages
 ```swift
-failMessage.failMessageForPath("test")?.errors.first.compact
-failMessage.failMessageForPath("test")?.errors.first.extended
-failMessage.failMessageForPath("example")?.errors.first.compact
-failMessage.failMessageForPath("example")?.errors.first.extended
-failMessage.failMessageForPath("example.number")?.errors.first.compact
-failMessage.failMessageForPath("example.number")?.errors.first.extended
+failMessage.failMessageForPath("number")?.errors.first?.compact
+failMessage.failMessageForPath("number")?.errors.first?.extended
+
+failMessage.failMessageForPath("garage")?.errors.first?.compact
+failMessage.failMessageForPath("garage.isOpen")?.errors.first?.extended
 ```
 The errors array contains ErrorMessage objects which in turn contains compact and extended error message.
 
