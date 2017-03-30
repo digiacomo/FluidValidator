@@ -15,13 +15,13 @@ open class AbstractValidator<T:AnyObject> : ValidationBase {
         super.init()
     }
     
-    open func validate(object object: AnyObject?) -> Bool {
+    open func validate(object target: AnyObject?) -> Bool {
         var result = true
         for validation in self.validations {
-            guard let object = object as? T else {
+            guard let target = target as? T else {
                 continue
             }
-            let validationResult = self.validate(property: validation.validationName, context: object)
+            let validationResult = self.validate(property: validation.validationName, context: target)
             result = result && validationResult
         }
         return result

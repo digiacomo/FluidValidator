@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "FluidValidator"
-  s.version          = "0.1.5"
+  s.version          = "0.1.6"
   s.summary          = "General purpose object validator"
 
   s.description      = <<-DESC
