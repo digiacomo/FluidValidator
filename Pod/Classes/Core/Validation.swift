@@ -35,10 +35,10 @@ open class Validation<T:AnyObject> {
                 return true
             }
             
-            if(!validatable.performValidation(target)) {
+            if(!validatable.performValidation(onObject: target)) {
                 let localizedName = self.localizeValidationName(self.validationName, context:object)
                 
-                validatable.hydrateFailMessage(self.error, localizedSubject: localizedName, failValue: target, context: object)
+                validatable.hydrateError(withFailMessage: self.error, localizedSubject: localizedName, failValue: target, context: object)
                 return false
             }
         }
@@ -55,7 +55,7 @@ open class Validation<T:AnyObject> {
         return self
     }
     
-    open func allErrors() -> FailMessage {
+    open var allErrors: FailMessage {
         return self.error
     }
 

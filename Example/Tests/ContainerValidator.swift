@@ -12,11 +12,11 @@ import FluidValidator
 class ContainerValidator : AbstractValidator<ContainerObject> {
     override init() {
         super.init()
-        self.addValidation("test") { (context) -> (AnyObject?) in
-            context.test as AnyObject?
+        self.addValidation(withName: "test") { (context) -> (Any?) in
+            context.test
         }.addRule(BeNotEmpty())
         
-        self.addValidation("example") { (context) -> (AnyObject?) in
+        self.addValidation(withName: "example") { (context) -> (Any?) in
             context.example
         }.addRule(ExampleValidator())
     }

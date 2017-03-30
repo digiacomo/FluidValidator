@@ -36,9 +36,9 @@ class ViewController: UIViewController {
         self.registration.lastname = self.lastname.text
         self.registration.email = self.email.text
         
-        let _ = self.validator.validate(self.registration)
+        let _ = self.validator.validate(object: self.registration)
         
-        let error = validator.allErrors()
+        let error = validator.allErrors
         let alert = UIAlertController()
         let actionOk = UIAlertAction(title: "ok", style: .default) { (action) in
             alert.dismiss(animated: true, completion: nil)

@@ -24,27 +24,28 @@ class Floor {
     }
 }
 
+
 class HomeValidator : AbstractValidator<Home> {
     override init() {
         super.init()
         
-        self.addValidation("number") { (context) -> (Any?) in
+        self.addValidation(withName: "number") { (context) -> (Any?) in
             context.number
         }.addRule(GreaterThan(limit: 3, includeLimit: false))
         
-        self.addValidation("ownerName") { (context) -> (Any?) in
+        self.addValidation(withName: "ownerName") { (context) -> (Any?) in
             context.ownerName
         }.addRule(BeNotEmpty())
         
-        self.addValidation("isLocked") { (context) -> (Any?) in
+        self.addValidation(withName: "isLocked") { (context) -> (Any?) in
             context.isLocked
         }.addRule(BeTrue())
         
-        self.addValidation("garage") { (context) -> (Any?) in
+        self.addValidation(withName: "garage") { (context) -> (Any?) in
             context.garage
         }.addRule(GarageValidator())
         
-        self.addValidation("floors") { (context) -> (Any?) in
+        self.addValidation(withName: "floors") { (context) -> (Any?) in
             context.floors
         }.addRule(EnumeratorValidator(validatable: FloorValidator()))
     }
@@ -54,13 +55,13 @@ class GarageValidator: AbstractValidator<Garage> {
     override init() {
         super.init()
         
-        self.addValidation("isOpen") { (context) -> Any? in
+        self.addValidation(withName: "isOpen") { (context) -> Any? in
             context.isOpen
         }.addRule(BeTrue())
         
-        self.addValidation("maxCars") { (context) -> Any? in
+        self.addValidation(withName: "maxCars") { (context) -> Any? in
             context.maxCars
-        }.addRule(LessThan(limit: 2, true))
+        }.addRule(LessThan(limit: 2, includeLimit: true))
     }
 }
 
@@ -68,9 +69,9 @@ class FloorValidator: AbstractValidator<Floor> {
     override init() {
         super.init()
         
-        self.addValidation("rooms") { (context) -> Any? in
+        self.addValidation(withName: "rooms") { (context) -> Any? in
             context.rooms
-            }.addRule(GreaterThan(limit: 4, includeLimit: true))
+        }.addRule(GreaterThan(limit: 4, includeLimit: true))
     }
 }
 
@@ -88,8 +89,8 @@ home.garage = garage
 home.floors = [floor_1, floor_2]
 
 let homeValidator = HomeValidator()
-let result = homeValidator.validate(home)
-let failMessage = homeValidator.allErrors()
+let result = homeValidator.validate(object: home)
+let failMessage = homeValidator.allErrors
 
 failMessage.failMessageForPath("number")?.errors.first?.compact
 failMessage.failMessageForPath("number")?.errors.first?.extended
@@ -99,3 +100,4 @@ failMessage.failMessageForPath("garage.isOpen")?.errors.first?.extended
 
 failMessage.failMessageForPath("floors")?.errors.first?.compact
 failMessage.failMessageForPath("floors.0.rooms")?.errors.first?.extended
+

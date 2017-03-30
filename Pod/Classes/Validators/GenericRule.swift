@@ -16,8 +16,8 @@ open class GenericRule: BeNotNil {
         super.init()
     }
     
-    override open func performValidation(_ object: AnyObject?) -> Bool {
-        if(!super.performValidation(object)) {
+    override open func performValidation(onObject object: AnyObject?) -> Bool {
+        if(!super.performValidation(onObject: object)) {
             return false
         }
         guard let object = object else {

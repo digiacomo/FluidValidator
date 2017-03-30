@@ -50,16 +50,16 @@ import FluidValidator
 class HomeValidator : AbstractValidator<Home> {
     override init() {
         super.init()
-        
-        self.addValidation("number") { (context) -> (Any?) in
+               
+        self.addValidation(withName: "number") { (context) -> (Any?) in
             context.number
         }.addRule(GreaterThan(limit: 3, includeLimit: false))
         
-        self.addValidation("ownerName") { (context) -> (Any?) in
+        self.addValidation(withName: "ownerName") { (context) -> (Any?) in
             context.ownerName
         }.addRule(BeNotEmpty())
         
-        self.addValidation("isLocked") { (context) -> (Any?) in
+        self.addValidation(withName: "isLocked") { (context) -> (Any?) in
             context.isLocked
         }.addRule(BeTrue())
     }
@@ -90,13 +90,13 @@ class GarageValidator: AbstractValidator<Garage> {
     override init() {
         super.init()
         
-        self.addValidation("isOpen") { (context) -> Any? in
+        self.addValidation(withName: "isOpen") { (context) -> Any? in
             context.isOpen
         }.addRule(BeTrue())
         
-        self.addValidation("maxCars") { (context) -> Any? in
+        self.addValidation(withName: "maxCars") { (context) -> Any? in
             context.maxCars
-        }.addRule(LessThan(limit: 2, true))
+        }.addRule(LessThan(limit: 2, includeLimit: true))
     }
 }
 
@@ -105,7 +105,7 @@ class HomeValidator : AbstractValidator<Home> {
         super.init()
         
         ...
-        self.addValidation("garage") { (context) -> (Any?) in
+        self.addValidation(withName: "garage") { (context) -> (Any?) in
             context.garage
         }.addRule(GarageValidator())
     }

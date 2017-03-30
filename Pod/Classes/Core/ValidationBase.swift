@@ -14,11 +14,11 @@ open class ValidationBase : Validatable {
     
     public init() {}
     
-    open func performValidation(_ object:AnyObject?) -> Bool {
+    open func performValidation(onObject object:AnyObject?) -> Bool {
         fatalError("Not implemented error")
     }
     
-    open func hydrateFailMessage(_ message: FailMessage, localizedSubject: String, failValue: AnyObject?, context: AnyObject) {
+    open func hydrateError(withFailMessage message: FailMessage, localizedSubject: String, failValue: AnyObject?, context: AnyObject) {
         fatalError("Not implemented error")
     }
     

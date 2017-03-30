@@ -29,8 +29,8 @@ fileprivate func > <T : Comparable>(lhs: T?, rhs: T?) -> Bool {
 
 
 open class BeNotEmpty : BeNotNil {
-    override open func performValidation(_ object: AnyObject?) -> Bool {
-        if (!super.performValidation(object)) {
+    override open func performValidation(onObject object: AnyObject?) -> Bool {
+        if (!super.performValidation(onObject: object)) {
             return false
         }
         return object?.description.characters.count > 0

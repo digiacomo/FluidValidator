@@ -15,19 +15,19 @@ open class AbstractValidator<T:AnyObject> : ValidationBase {
         super.init()
     }
     
-    open func validate(_ object: AnyObject?) -> Bool {
+    open func validate(object object: AnyObject?) -> Bool {
         var result = true
         for validation in self.validations {
             guard let object = object as? T else {
                 continue
             }
-            let validationResult = self.validate(validation.validationName, context: object)
+            let validationResult = self.validate(property: validation.validationName, context: object)
             result = result && validationResult
         }
         return result
     }
     
-    func validate(_ name:String, context: T) -> Bool {
+    func validate(property name:String, context: T) -> Bool {
         let validations = self.validations.filter({(validation) -> Bool in
             validation.validationName == name
         })
@@ -39,15 +39,15 @@ open class AbstractValidator<T:AnyObject> : ValidationBase {
         return validationResult
     }
     
-    @discardableResult open func addValidation(_ name:String, targetGetter:@escaping (_ context:T)->(Any?)) -> Validation<T> {
+    @discardableResult open func addValidation(withName name:String, targetGetter:@escaping (_ context:T)->(Any?)) -> Validation<T> {
         let validation = Validation(name: name, targetGetter: targetGetter)
         self.validations.append(validation)
         return validation
     }
     
-    open func addValidation(_ property: Selector) -> Void {
+    open func addValidation(forProperty property: Selector) -> Void {
         let name = String(describing: property)
-        addValidation(name) { (context) -> (AnyObject?) in
+        addValidation(withName: name) { (context) -> (AnyObject?) in
             
             guard let nsContext = context as? NSObject else {
                 return nil
@@ -56,7 +56,7 @@ open class AbstractValidator<T:AnyObject> : ValidationBase {
         }
     }
     
-    open func allErrors() -> FailMessage {
+    open var allErrors: FailMessage {
         let error = FailMessage()
         let validationNames = self.validations.map({(validation) -> String in
             validation.validationName
@@ -77,9 +77,9 @@ open class AbstractValidator<T:AnyObject> : ValidationBase {
             validation.validationName == name
         }
         
-        let failMessage = validations.first?.allErrors() ?? FailMessage()
+        let failMessage = validations.first?.allErrors ?? FailMessage()
         for validation in validations {
-            let validationFail = validation.allErrors()
+            let validationFail = validation.allErrors
             let joinedArrays = failMessage.errors + validationFail.errors
             failMessage.errors = Array(Set<ErrorMessage>(joinedArrays))
         }
@@ -87,21 +87,21 @@ open class AbstractValidator<T:AnyObject> : ValidationBase {
     }
     
     // override ValidationBase (which implements Validatable)
-    override open func performValidation(_ object:AnyObject?) -> Bool {
+    override open func performValidation(onObject object:AnyObject?) -> Bool {
         if let object = object as? T {
-            return self.validate(object)
+            return self.validate(object: object)
         }
         return false
     }
     
-    override open func hydrateFailMessage(_ message: FailMessage, localizedSubject: String, failValue: AnyObject?, context: AnyObject) {
+    override open func hydrateError(withFailMessage message: FailMessage, localizedSubject: String, failValue: AnyObject?, context: AnyObject) {
         let error = ErrorMessage()
         error.compact = self.errorMessage(localizedSubject, failValue: failValue, context: context)
         error.extended = self.errorMessageExtended(localizedSubject, failValue: failValue, context: context)
         message.errors.append(error)
         
         for validation in self.validations {
-            message.setObject(validation.allErrors(), forKey: validation.validationName)
+            message.setObject(validation.allErrors, forKey: validation.validationName)
         }
     }
     

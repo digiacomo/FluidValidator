@@ -12,18 +12,14 @@ open class LessThan : BeNotNil {
     fileprivate var limit:NSNumber
     fileprivate var includeLimit:Bool
     
-    public init(limit: NSNumber, _ includeLimit:Bool?) {
+    public init(limit: NSNumber, includeLimit include:Bool = false) {
         self.limit = limit
-        if let include = includeLimit {
-            self.includeLimit = include
-        }else{
-            self.includeLimit = false
-        }
+        self.includeLimit = include
         super.init()
     }
     
-    override open func performValidation(_ object: AnyObject?) -> Bool {
-        if(!super.performValidation(object)) {
+    override open func performValidation(onObject object: AnyObject?) -> Bool {
+        if(!super.performValidation(onObject: object)) {
             return false
         }else{
             guard let value = object as? NSNumber else {

@@ -48,8 +48,8 @@ class FluidValidatorTests: XCTestCase {
         example.isTrue = false
         
         let validator = ExampleValidator()
-        let result = validator.validate(example)
-        let failMessage = validator.allErrors()
+        let result = validator.validate(object: example)
+        let failMessage = validator.allErrors
 
         XCTAssertFalse(result)
         XCTAssertTrue(failMessage.failingFields().count > 0)
@@ -67,8 +67,8 @@ class FluidValidatorTests: XCTestCase {
         container.example = example
         
         let validator = ContainerValidator()
-        let result = validator.validate(container)
-        let failMessage = validator.allErrors()
+        let result = validator.validate(object: container)
+        let failMessage = validator.allErrors
         
         XCTAssertFalse(result)
         XCTAssertTrue(failMessage.failMessageForPath("test")?.errors.count > 0)
@@ -88,8 +88,8 @@ class FluidValidatorTests: XCTestCase {
         container.arrExample = [example, example, example]
         
         let validator = ListContainerValidator()
-        let result = validator.validate(container)
-        let failMessage = validator.allErrors()
+        let result = validator.validate(object: container)
+        let failMessage = validator.allErrors
         
         XCTAssertFalse(result)
         XCTAssertTrue(failMessage.failMessageForPath("arrExample.0.number")!.errors.count > 0)
@@ -100,8 +100,8 @@ class FluidValidatorTests: XCTestCase {
         let example = Example()
         example.number = 5
         let validator = ExampleValidator2()
-        let result = validator.validate(example)
-        let _ = validator.allErrors()
+        let result = validator.validate(object: example)
+        let _ = validator.allErrors
         XCTAssertTrue(result)
     }
 }

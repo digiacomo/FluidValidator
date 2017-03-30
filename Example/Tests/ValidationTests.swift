@@ -22,8 +22,8 @@ class ValidationTests: XCTestCase {
     }
     
     func testValidation() {
-        let validation = Validation(name: "isTrue") { (context:Example) -> (AnyObject?) in
-            return context.isTrue as AnyObject?
+        let validation = Validation(name: "isTrue") { (context:Example) -> (Any?) in
+            return context.isTrue
         }
         let rule = BeNotNil()
         validation.addRule(rule)
@@ -32,15 +32,15 @@ class ValidationTests: XCTestCase {
         
         let result = validation.runValidation(example)
         
-        let failMessage = validation.allErrors()
+        let failMessage = validation.allErrors
         
         XCTAssertFalse(result)
         XCTAssertTrue(failMessage.errors.count > 0)
     }
     
     func testConditionalValidation() {
-        let validation = Validation(name: "test") { (context:Example) -> (AnyObject?) in
-            return context.testProperty as AnyObject?
+        let validation = Validation(name: "test") { (context:Example) -> (Any?) in
+            return context.testProperty 
         }
         
         validation.when { (context) -> (Bool) in

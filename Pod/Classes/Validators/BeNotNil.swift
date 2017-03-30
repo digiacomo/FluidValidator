@@ -10,7 +10,7 @@ import Foundation
 
 open class BeNotNil : AbstractValidationRule {
     
-    override open func performValidation(_ object: AnyObject?) -> Bool {
+    override open func performValidation(onObject object: AnyObject?) -> Bool {
         return object != nil
     }
     

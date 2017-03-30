@@ -14,7 +14,7 @@ open class ValidEmail: RegexMatch {
         super.init(regex: regex)
     }
     
-    override open func performValidation(_ object: AnyObject?) -> Bool {
-        return super.performValidation(object)
+    override open func performValidation(onObject object: AnyObject?) -> Bool {
+        return super.performValidation(onObject: object)
     }
 }
