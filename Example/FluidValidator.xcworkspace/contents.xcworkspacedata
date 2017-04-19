@@ -5,6 +5,9 @@
       location = "group:FluidValidator.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:../Framework/Framework.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>
