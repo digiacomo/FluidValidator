@@ -10,6 +10,15 @@
 		ED927FC72389C3E500A39B23 /* Valid.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED927FBD2389C3E400A39B23 /* Valid.framework */; };
 		ED927FCC2389C3E500A39B23 /* ValidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED927FCB2389C3E500A39B23 /* ValidTests.swift */; };
 		ED927FCE2389C3E500A39B23 /* Valid.h in Headers */ = {isa = PBXBuildFile; fileRef = ED927FC02389C3E500A39B23 /* Valid.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED927FDA2389C42300A39B23 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED927FD92389C42300A39B23 /* Validator.swift */; };
+		ED927FDD2389C45C00A39B23 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED927FDC2389C45C00A39B23 /* Validation.swift */; };
+		ED927FDF2389C47C00A39B23 /* Validatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED927FDE2389C47C00A39B23 /* Validatable.swift */; };
+		ED927FE22389C4C200A39B23 /* ValidationRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED927FE12389C4C200A39B23 /* ValidationRule.swift */; };
+		ED927FE52389C4FF00A39B23 /* GreaterThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED927FE42389C4FF00A39B23 /* GreaterThan.swift */; };
+		ED927FE72389C51100A39B23 /* NotNil.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED927FE62389C51100A39B23 /* NotNil.swift */; };
+		ED927FE92389C52500A39B23 /* NotEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED927FE82389C52500A39B23 /* NotEmpty.swift */; };
+		ED927FEB2389C53500A39B23 /* LowerThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED927FEA2389C53500A39B23 /* LowerThan.swift */; };
+		ED927FED2389C57000A39B23 /* ValidationRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED927FEC2389C57000A39B23 /* ValidationRuleTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +38,15 @@
 		ED927FC62389C3E500A39B23 /* ValidTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ValidTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED927FCB2389C3E500A39B23 /* ValidTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidTests.swift; sourceTree = "<group>"; };
 		ED927FCD2389C3E500A39B23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED927FD92389C42300A39B23 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		ED927FDC2389C45C00A39B23 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
+		ED927FDE2389C47C00A39B23 /* Validatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validatable.swift; sourceTree = "<group>"; };
+		ED927FE12389C4C200A39B23 /* ValidationRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationRule.swift; sourceTree = "<group>"; };
+		ED927FE42389C4FF00A39B23 /* GreaterThan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreaterThan.swift; sourceTree = "<group>"; };
+		ED927FE62389C51100A39B23 /* NotNil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotNil.swift; sourceTree = "<group>"; };
+		ED927FE82389C52500A39B23 /* NotEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotEmpty.swift; sourceTree = "<group>"; };
+		ED927FEA2389C53500A39B23 /* LowerThan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowerThan.swift; sourceTree = "<group>"; };
+		ED927FEC2389C57000A39B23 /* ValidationRuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationRuleTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,8 +89,12 @@
 		ED927FBF2389C3E500A39B23 /* Valid */ = {
 			isa = PBXGroup;
 			children = (
+				ED927FE32389C4F400A39B23 /* Rules */,
+				ED927FE02389C4B700A39B23 /* ValidationRule */,
+				ED927FDB2389C44D00A39B23 /* Validation */,
 				ED927FC02389C3E500A39B23 /* Valid.h */,
 				ED927FC12389C3E500A39B23 /* Info.plist */,
+				ED927FD92389C42300A39B23 /* Validator.swift */,
 			);
 			path = Valid;
 			sourceTree = "<group>";
@@ -82,8 +104,37 @@
 			children = (
 				ED927FCB2389C3E500A39B23 /* ValidTests.swift */,
 				ED927FCD2389C3E500A39B23 /* Info.plist */,
+				ED927FEC2389C57000A39B23 /* ValidationRuleTests.swift */,
 			);
 			path = ValidTests;
+			sourceTree = "<group>";
+		};
+		ED927FDB2389C44D00A39B23 /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				ED927FDC2389C45C00A39B23 /* Validation.swift */,
+				ED927FDE2389C47C00A39B23 /* Validatable.swift */,
+			);
+			path = Validation;
+			sourceTree = "<group>";
+		};
+		ED927FE02389C4B700A39B23 /* ValidationRule */ = {
+			isa = PBXGroup;
+			children = (
+				ED927FE12389C4C200A39B23 /* ValidationRule.swift */,
+			);
+			path = ValidationRule;
+			sourceTree = "<group>";
+		};
+		ED927FE32389C4F400A39B23 /* Rules */ = {
+			isa = PBXGroup;
+			children = (
+				ED927FE42389C4FF00A39B23 /* GreaterThan.swift */,
+				ED927FE62389C51100A39B23 /* NotNil.swift */,
+				ED927FE82389C52500A39B23 /* NotEmpty.swift */,
+				ED927FEA2389C53500A39B23 /* LowerThan.swift */,
+			);
+			path = Rules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +199,7 @@
 				TargetAttributes = {
 					ED927FBC2389C3E400A39B23 = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
 					};
 					ED927FC52389C3E500A39B23 = {
 						CreatedOnToolsVersion = 11.2.1;
@@ -195,6 +247,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED927FE92389C52500A39B23 /* NotEmpty.swift in Sources */,
+				ED927FE72389C51100A39B23 /* NotNil.swift in Sources */,
+				ED927FE52389C4FF00A39B23 /* GreaterThan.swift in Sources */,
+				ED927FDF2389C47C00A39B23 /* Validatable.swift in Sources */,
+				ED927FE22389C4C200A39B23 /* ValidationRule.swift in Sources */,
+				ED927FEB2389C53500A39B23 /* LowerThan.swift in Sources */,
+				ED927FDD2389C45C00A39B23 /* Validation.swift in Sources */,
+				ED927FDA2389C42300A39B23 /* Validator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED927FED2389C57000A39B23 /* ValidationRuleTests.swift in Sources */,
 				ED927FCC2389C3E500A39B23 /* ValidTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,6 +401,7 @@
 		ED927FD22389C3E500A39B23 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7ANT8E5L74;
@@ -356,6 +418,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = uhu.Valid;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +427,7 @@
 		ED927FD32389C3E500A39B23 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7ANT8E5L74;
@@ -388,6 +452,7 @@
 		ED927FD52389C3E500A39B23 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7ANT8E5L74;
 				INFOPLIST_FILE = ValidTests/Info.plist;
@@ -406,6 +471,7 @@
 		ED927FD62389C3E500A39B23 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7ANT8E5L74;
 				INFOPLIST_FILE = ValidTests/Info.plist;

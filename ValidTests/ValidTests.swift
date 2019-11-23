@@ -10,25 +10,26 @@ import XCTest
 @testable import Valid
 
 class ValidTests: XCTestCase {
-
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+        struct Test {
+            let a: Int
         }
-    }
 
+
+        let test = Test(a: 1)
+
+        let rule1 = GreaterThan(max: 0)
+        let anyValidationRule1 = AnyValidationRule(rule: rule1)
+        let validation = Validation(keyPath: \Test.a, rules: [
+            anyValidationRule1
+        ])
+        let anyValidation = AnyValidation(validation: validation)
+        var validator = Validator<Test>()
+        validator
+            .addValidation(keyPath: \.a)
+            .addRule(rule: GreaterThan())
+        
+        
+        validator.performValidation(on: test)
+    }
 }
