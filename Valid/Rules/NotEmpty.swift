@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct NotEmpty: Validatable {
+final class NotEmpty: Validatable {
     func validate(value: String?) -> Bool {
         guard let value = value else {
             return false

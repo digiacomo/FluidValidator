@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct AnyValidationRule<ValueType>: Validatable {
+struct AnyValidationRule<ValueType> {
     private let validate: (ValueType) -> Bool
     
     init<Rule: Validatable>(rule: Rule) where Rule.ValueType == ValueType {

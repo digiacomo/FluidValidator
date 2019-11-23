@@ -8,12 +8,12 @@
 
 import Foundation
 
-protocol Validatable {
+protocol Validatable: class {
     associatedtype ValueType
     func validate(value: ValueType) -> Bool
 }
 
-struct AnyValidation<ValueType> {
+class AnyValidation<ValueType> {
     let validate: (ValueType) -> Bool
     
     init<ValidationType: Validatable>(validation: ValidationType)

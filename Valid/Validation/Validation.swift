@@ -25,7 +25,7 @@ import Foundation
 //    }
 //}
 
-struct Validation<T, P>: Validatable {
+class Validation<T, P>: Validatable {
     typealias ValueType = T
     
     let keyPath: KeyPath<T, P>
@@ -41,7 +41,13 @@ struct Validation<T, P>: Validatable {
         }
     }
     
-    mutating func addRule<T: Validatable>(rule: T) where P == T.ValueType {
+    @discardableResult
+    func addRule<ValidatableType: Validatable>(rule: ValidatableType) -> Validation<T, P> where P == ValidatableType.ValueType {
         rules.append(AnyValidationRule(rule: rule))
+        return self
+    }
+    
+    init(keyPath: KeyPath<T, P>) {
+        self.keyPath = keyPath
     }
 }

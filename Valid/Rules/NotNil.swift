@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct NotNil<T>: Validatable {
+final class NotNil<T>: Validatable {
     func validate(value: Optional<T>) -> Bool {
         switch value {
         case .none:

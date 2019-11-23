@@ -8,10 +8,14 @@
 
 import Foundation
 
-struct LowerThan: Validatable {
+final class LowerThan: Validatable {
     let max: Int
     
     func validate(value: Int) -> Bool {
         value < max
+    }
+    
+    init(max: Int) {
+        self.max = max
     }
 }

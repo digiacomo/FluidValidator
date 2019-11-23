@@ -13,23 +13,42 @@ class ValidTests: XCTestCase {
     func testExample() {
         struct Test {
             let a: Int
+            let b: String?
+            let c: SubTest
+        }
+        
+        struct SubTest {
+            let c: Int
+        }
+        
+        func subTestValidator() -> Validator<SubTest> {
+            let validator = Validator<SubTest>()
+            validator
+                .addValidation(keyPath: \.c)
+                .addRule(rule: GreaterThan(max: 1))
+            return validator
         }
 
-
-        let test = Test(a: 1)
-
-        let rule1 = GreaterThan(max: 0)
-        let anyValidationRule1 = AnyValidationRule(rule: rule1)
-        let validation = Validation(keyPath: \Test.a, rules: [
-            anyValidationRule1
-        ])
-        let anyValidation = AnyValidation(validation: validation)
-        var validator = Validator<Test>()
-        validator
-            .addValidation(keyPath: \.a)
-            .addRule(rule: GreaterThan())
+        func testValidator() -> Validator<Test> {
+            let validator = Validator<Test>()
+            validator
+                .addValidation(keyPath: \.a)
+                .addRule(rule: GreaterThan(max: 1))
+                .addRule(rule: LowerThan(max: 10))
+            
+            validator
+                .addValidation(keyPath: \.b)
+                .addRule(rule: NotEmpty())
+            
+            validator
+                .addValidation(keyPath: \.c)
+                .addRule(rule: subTestValidator())
+            return validator
+        }
         
-        
-        validator.performValidation(on: test)
+        let test = Test(a: 1, b: nil, c: SubTest(c: 1))
+        let validator = testValidator()
+        validator.validate(value: test)
+        validator.error(for: \.a)
     }
 }
