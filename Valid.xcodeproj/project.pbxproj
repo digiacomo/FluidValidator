@@ -19,6 +19,8 @@
 		ED927FE92389C52500A39B23 /* NotEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED927FE82389C52500A39B23 /* NotEmpty.swift */; };
 		ED927FEB2389C53500A39B23 /* LowerThan.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED927FEA2389C53500A39B23 /* LowerThan.swift */; };
 		ED927FED2389C57000A39B23 /* ValidationRuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED927FEC2389C57000A39B23 /* ValidationRuleTests.swift */; };
+		EDAC3028238C7C1900D08F57 /* ValidationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAC3027238C7C1900D08F57 /* ValidationTests.swift */; };
+		EDAC302A238C7CB800D08F57 /* StringInRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDAC3029238C7CB800D08F57 /* StringInRange.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		ED927FE82389C52500A39B23 /* NotEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotEmpty.swift; sourceTree = "<group>"; };
 		ED927FEA2389C53500A39B23 /* LowerThan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LowerThan.swift; sourceTree = "<group>"; };
 		ED927FEC2389C57000A39B23 /* ValidationRuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationRuleTests.swift; sourceTree = "<group>"; };
+		EDAC3027238C7C1900D08F57 /* ValidationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationTests.swift; sourceTree = "<group>"; };
+		EDAC3029238C7CB800D08F57 /* StringInRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringInRange.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,7 @@
 				ED927FCB2389C3E500A39B23 /* ValidTests.swift */,
 				ED927FCD2389C3E500A39B23 /* Info.plist */,
 				ED927FEC2389C57000A39B23 /* ValidationRuleTests.swift */,
+				EDAC3027238C7C1900D08F57 /* ValidationTests.swift */,
 			);
 			path = ValidTests;
 			sourceTree = "<group>";
@@ -133,6 +138,7 @@
 				ED927FE62389C51100A39B23 /* NotNil.swift */,
 				ED927FE82389C52500A39B23 /* NotEmpty.swift */,
 				ED927FEA2389C53500A39B23 /* LowerThan.swift */,
+				EDAC3029238C7CB800D08F57 /* StringInRange.swift */,
 			);
 			path = Rules;
 			sourceTree = "<group>";
@@ -253,6 +259,7 @@
 				ED927FDF2389C47C00A39B23 /* Validatable.swift in Sources */,
 				ED927FE22389C4C200A39B23 /* ValidationRule.swift in Sources */,
 				ED927FEB2389C53500A39B23 /* LowerThan.swift in Sources */,
+				EDAC302A238C7CB800D08F57 /* StringInRange.swift in Sources */,
 				ED927FDD2389C45C00A39B23 /* Validation.swift in Sources */,
 				ED927FDA2389C42300A39B23 /* Validator.swift in Sources */,
 			);
@@ -263,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED927FED2389C57000A39B23 /* ValidationRuleTests.swift in Sources */,
+				EDAC3028238C7C1900D08F57 /* ValidationTests.swift in Sources */,
 				ED927FCC2389C3E500A39B23 /* ValidTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

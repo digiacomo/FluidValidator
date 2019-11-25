@@ -48,7 +48,10 @@ class ValidTests: XCTestCase {
         
         let test = Test(a: 1, b: nil, c: SubTest(c: 1))
         let validator = testValidator()
+        
         validator.validate(value: test)
-        validator.error(for: \.a)
+        
+        XCTAssertTrue(validator.isError(for: \.a))
+        XCTAssertEqual(validator.firstError(for: \.b), NotEmpty().errorMessage)
     }
 }

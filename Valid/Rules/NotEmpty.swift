@@ -15,4 +15,6 @@ final class NotEmpty: Validatable {
         }
         return value.count > 0
     }
+    
+    let errorMessage: String = "Error!"
 }

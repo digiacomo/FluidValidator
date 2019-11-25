@@ -8,15 +8,27 @@
 
 import Foundation
 
+enum ValidationResult {
+    case valid, invalid([String])
+}
+
 open class Validator<T>: Validatable {
-    private var validations: [AnyValidation<T>] = []
+    let errorMessage: String = "Validation failed"
     
+    private var validations: [AnyValidation<T>] = []
+    private (set) var errors: [PartialKeyPath<T>: ValidationResult] = [:]
+    
+    @discardableResult
     func validate(value: T) -> Bool {
         return validations.reduce(true) { result, validation -> Bool in
-            guard result else {
-                return false
+            let validationResult = validation.validate(value)
+            let keyPath = validation.keyPath
+            if !validationResult {
+                errors[keyPath] = .invalid(validation.getErrors())
+            } else {
+                errors[keyPath] = .valid
             }
-            return result && validation.validate(value)
+            return result && validationResult
         }
     }
     
@@ -27,7 +39,20 @@ open class Validator<T>: Validatable {
         return validation
     }
     
-    func error<P>(for keyPath: KeyPath<T, P>) -> Bool {
-        return true
+    func isError<P>(for keyPath: KeyPath<T, P>) -> Bool {
+        switch errors[keyPath] {
+        case .invalid:
+            return true
+        case .none,.valid:
+            return false
+        }
+    }
+    
+    func firstError<P>(for keyPath: KeyPath<T, P>) -> String? {
+        guard let result = errors[keyPath],
+            case .invalid(let messages) = result else {
+            return nil
+        }
+        return messages.first
     }
 }

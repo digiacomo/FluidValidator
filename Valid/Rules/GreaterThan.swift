@@ -18,4 +18,6 @@ final class GreaterThan: Validatable {
     init(max: Int) {
         self.max = max
     }
+    
+    let errorMessage: String = "Error!"
 }

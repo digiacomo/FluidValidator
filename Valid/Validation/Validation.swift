@@ -8,36 +8,20 @@
 
 import Foundation
 
-//struct Validation2<T, P>: Validatable {
-//    typealias ValueType = T
-//    let name: String
-//    let getter: (T) -> P
-//    private (set) var rules: [AnyValidationRule<P>]
-//    
-//    func validate(value: T) -> Bool {
-//        let value = getter(value)
-//        return rules.reduce(true) { result, rule -> Bool in
-//            guard result else {
-//                return false
-//            }
-//            return result && rule.validate(value: value)
-//        }
-//    }
-//}
-
-class Validation<T, P>: Validatable {
-    typealias ValueType = T
-    
+class Validation<T, P> {
     let keyPath: KeyPath<T, P>
     private (set) var rules: [AnyValidationRule<P>] = []
+    private var errors: [String] = []
     
+    @discardableResult
     func validate(value: T) -> Bool {
         let value = value[keyPath: keyPath]
         return rules.reduce(true) { result, rule -> Bool in
-            guard result else {
-                return false
+            let ruleResult = rule.validate(value: value)
+            if !ruleResult {
+                errors.append(rule.errorMessage)
             }
-            return result && rule.validate(value: value)
+            return result && ruleResult
         }
     }
     
@@ -47,7 +31,24 @@ class Validation<T, P>: Validatable {
         return self
     }
     
+    func getErrors() -> [String] {
+        return errors
+    }
+    
     init(keyPath: KeyPath<T, P>) {
         self.keyPath = keyPath
+    }
+}
+
+class AnyValidation<ValueType> {
+    let validate: (ValueType) -> Bool
+    let getErrors: () -> [String]
+    
+    let keyPath: PartialKeyPath<ValueType>
+    
+    init<P>(validation: Validation<ValueType, P>){
+        self.keyPath = validation.keyPath
+        self.validate = validation.validate(value:)
+        self.getErrors = validation.getErrors
     }
 }

@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+import XCTest
+@testable import Valid
+
+class ValidationRuleTests: XCTestCase {
+    func testGreaterThan() {
+        let gt = GreaterThan(max: 1)
+        XCTAssertTrue(gt.validate(value: 5))
+    }
+}

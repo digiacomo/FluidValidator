@@ -11,13 +11,5 @@ import Foundation
 protocol Validatable: class {
     associatedtype ValueType
     func validate(value: ValueType) -> Bool
-}
-
-class AnyValidation<ValueType> {
-    let validate: (ValueType) -> Bool
-    
-    init<ValidationType: Validatable>(validation: ValidationType)
-        where ValidationType.ValueType == ValueType {
-        self.validate = validation.validate
-    }
+    var errorMessage: String { get }
 }

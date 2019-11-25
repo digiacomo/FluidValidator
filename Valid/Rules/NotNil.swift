@@ -17,4 +17,6 @@ final class NotNil<T>: Validatable {
             return true
         }
     }
+    
+    let errorMessage: String = "Error!"
 }

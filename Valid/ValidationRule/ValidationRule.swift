@@ -10,9 +10,11 @@ import Foundation
 
 struct AnyValidationRule<ValueType> {
     private let validate: (ValueType) -> Bool
+    private (set) var errorMessage: String
     
     init<Rule: Validatable>(rule: Rule) where Rule.ValueType == ValueType {
         self.validate = rule.validate
+        self.errorMessage = rule.errorMessage
     }
     
     func validate(value: ValueType) -> Bool {
